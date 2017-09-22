@@ -1,0 +1,30 @@
+extends templates/layout
+
+block vars
+    - var title = ''
+
+block content
+    div.content.open-news
+        include templates/decor-lines
+        div.container.padding_desktop-xl
+            div.open-news__btn-close-container.ta-center
+                a(href="/news.html").btn-circle.btn-circle_close.open-news__btn-close
+            p.title.title_l.open-news__heading.
+                Число пополнений &laquo;Тройки&raquo; через терминалы &laquo;МегаФона&raquo; увеличилось на&nbsp;80%.
+            div.open-news__article
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            Департамент транспорта Москвы и&nbsp;компания &laquo;МегаФон&raquo; подвели итоги первого года работы сервиса пополнения карты &laquo;Тройка&raquo; через терминалы мобильного оператора. Совместный проект был реализован в&nbsp;конце октября 2014 года компанией &laquo;МегаЛабс&raquo;. С&nbsp;начала года общее число пополнений увеличилось на&nbsp;70%, оборот за&nbsp;тот&nbsp;же период вырос на&nbsp;80%.
+                        p.text.text_light.open-news__photo-block-text.
+                            При пополнении карты &laquo;Тройка&raquo; через платежные терминалы &laquo;МегаФона&raquo; средства на&nbsp;карту зачисляются незамедлительно, и&nbsp;клиент сразу может оплачивать поездки в&nbsp;метро, наземном транспорте, пригородных электропоездах, Аэроэкспрессе, Московском зоопарке и&nbsp;планетарии по&nbsp;тарифам билета &laquo;Электронный кошелек&raquo; карты &laquo;Тройка&raquo;.
+                p.text.text_xl.open-news__article.bottom-line.bottom-line_center.
+                    &laquo;Департамент транспорта Москвы постоянно работает над совершенствованием качества обслуживания в&nbsp;городском транспорте: людям должно быть удобно оплачивать проезд и&nbsp;совершать поездки. Совместный проект с&nbsp;крупным мобильным оператором несомненно делает транспортную карту &laquo;Тройка&raquo; еще популярнее среди пассажиров&raquo;
+                p.text.text_light.open-news__article-author.
+                    Бисембаева Алина, <br>заместитель руководителя Департамента транспорта и&nbsp;развития дорожно-транспортной инфраструктуры города Москвы.
+                p.text.text_xl.open-news__article.bottom-line.bottom-line_center.
+                    &laquo;Новый сервис пользуется уверенным спросом у&nbsp;посетителей наших салонов. Удобное расположение офисов &laquo;МегаФон Ритейл&raquo; позволяет клиентам пополнять карту рядом с&nbsp;домом или работой в&nbsp;удобное для них время. А&nbsp;благодаря активному росту популярности &laquo;Тройки&raquo; мы&nbsp;уверены, что число транзакций до&nbsp;конца следующего 2016 года значительно увеличится&raquo;
+                p.text.text_light.open-news__article-author.
+                    Карапетян Айк, <br>директор по&nbsp;финансовым сервисам компании &laquo;МегаЛабс&raquo;.
+            div.open-news__btn-top-container.ta-center
+                button.btn-circle.btn-circle_top.open-news__btn-to-top.js-btn-top

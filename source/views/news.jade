@@ -1,0 +1,105 @@
+extends templates/layout
+
+block vars
+    - var title = 'Новости'
+
+block content
+    div.content.news.ta-center
+        include templates/decor-lines
+        div.container.news__container.container-decor-dots
+            p.title.title_xl.news__heading.
+                Новости
+            div.article-list.article-list_news
+                //-------------------- 01
+                div.article-list__item
+                    div.article-list__elem.article-list__elem_img.article-list__elem_img-01
+                    div.article-list__elem.article-list__elem_text
+                        a.title.title_l.article-list__link(href="/open-news-01.html").
+                            &laquo;МегаФон&raquo; и&nbsp;MasterCard отправляют зрителей во&nbsp;вселенную &laquo;Звёздных войн&raquo; со&nbsp;скидкой
+                        p.text.text_light.
+                            Сегодня в&nbsp;российском прокате стартовал фильм &laquo;Изгой-один. Звёздные войны: Истории&raquo;, а&nbsp;&laquo;МегаФон&raquo; и&nbsp;MasterCard дарят всем поклонникам &laquo;звёздной&raquo; саги скидку&nbsp;20% на&nbsp;покупку билетов.
+                        div.article-list__arrow
+                //-------------------- 02
+                div.article-list__item
+                    div.article-list__elem.article-list__elem_img.article-list__elem_img-02
+                    div.article-list__elem.article-list__elem_text
+                        a.title.title_l.article-list__link(href="/open-news-02.html").
+                            Банковская карта &laquo;МегаФона&raquo; теперь доступна по&nbsp;всей России
+                        p.text.text_light.
+                            С 10 октября новая банковская карта «МегаФона» будет доступна для получения во всех городах России. Ее уникальность в том, что счет этой карты — это счет мобильного телефона.
+                        div.article-list__arrow
+                //-------------------- 03
+                div.article-list__item
+                    div.article-list__elem.article-list__elem_img.article-list__elem_img-03
+                    div.article-list__elem.article-list__elem_text
+                        a.title.title_l.article-list__link(href="/open-news-03.html").
+                            Олимпийские чемпионки Рио-2016 стали первыми обладательницами новых карт &laquo;МегаФона&raquo;
+                        p.text.text_light.
+                            Сегодня «МегаФон» презентовал банковскую карту, аналогов которой нет в мире.
+                        div.article-list__arrow
+                //-------------------- 04
+                div.article-list__item
+                    div.article-list__elem.article-list__elem_img.article-list__elem_img-04
+                    div.article-list__elem.article-list__elem_text
+                        a.title.title_l.article-list__link(href="/open-news-04.html").
+                            Число пополнений «Тройки» через терминалы «МегаФона» увеличилось на 80%
+                        p.text.text_light.
+                            Департамент транспорта Москвы и&nbsp;компания &laquo;МегаФон&raquo; подвели итоги первого года работы сервиса пополнения карты &laquo;Тройка&raquo; через терминалы мобильного оператора.
+                        div.article-list__arrow
+                //-------------------- 05
+                div.article-list__item
+                    div.article-list__elem.article-list__elem_img.article-list__elem_img-05
+                    div.article-list__elem.article-list__elem_text
+                        a.title.title_l.article-list__link(href="/open-news-05.html").
+                            Московские абоненты &laquo;МегаФона&raquo; теперь могут оплатить проезд в&nbsp;транспорте с&nbsp;помощью телефона
+                        p.text.text_light.
+                            У&nbsp;абонентов &laquo;МегаФона&raquo; появилась возможность оплатить проезд в&nbsp;общественном транспорте города Москвы при помощи технологии NFC.
+                        div.article-list__arrow
+                //-------------------- 06
+                div.article-list__item
+                    div.article-list__elem.article-list__elem_img.article-list__elem_img-ph
+                    div.article-list__elem.article-list__elem_text
+                        a.title.title_l.article-list__link(href="/open-news-06.html").
+                            &laquo;Ёлочный&raquo; базар на&nbsp;&laquo;МегаФон.ТВ&raquo;. Онлайн-кинотеатр покажет серии &laquo;Ёлок&raquo; бесплатно.
+                        p.text.text_light.
+                            Зрители онлайн-кинотеатра &laquo;МегаФон.ТВ&raquo; получили бесплатный доступ к&nbsp;просмотру первых частей народной комедии &laquo;Ёлки&raquo; с&nbsp;19&nbsp;декабря по&nbsp;8&nbsp;января 2017&nbsp;включительно.
+                        div.article-list__arrow
+                //-------------------- 07
+                div.article-list__item
+                    div.article-list__elem.article-list__elem_img.article-list__elem_img-ph
+                    div.article-list__elem.article-list__elem_text
+                        a.title.title_l.article-list__link(href="/open-news-07.html").
+                            МегаФон.ТВ покажет фильмы 20th Century Fox (20-й Век Фокс)
+                        p.text.text_light.
+                            Онлайн-кинотеатр &laquo;МегаФон.ТВ&raquo; подписал соглашение о&nbsp;партнёрстве с&nbsp;американской студией 20th Century Fox (20-й Век Фокс). Теперь пользователям доступно более 100 популярных фильмов киностудии.
+                        div.article-list__arrow
+                //-------------------- 08
+                div.article-list__item
+                    div.article-list__elem.article-list__elem_img.article-list__elem_img-08
+                    div.article-list__elem.article-list__elem_text
+                        a.title.title_l.article-list__link(href="/open-news-08.html").
+                            Две недели бесплатных сериалов на&nbsp;&laquo;МегаФон&nbsp;ТВ&raquo;
+                        p.text.text_light.
+                            &laquo;МегаФон&raquo; приготовил специальную акцию для любителей сериалов!
+                        div.article-list__arrow
+                //-------------------- 09
+                div.article-list__item
+                    div.article-list__elem.article-list__elem_img.article-list__elem_img-09
+                    div.article-list__elem.article-list__elem_text
+                        a.title.title_l.article-list__link(href="/open-news-09.html").
+                            Проекты &laquo;МегаФона&raquo; отмечены премией &laquo;Время инноваций-2016&raquo;
+                        p.text.text_light.
+                            Наша компания стала почетным лауреатом ежегодной премии &laquo;Время инноваций&raquo;, проводимой под патронажем Минэкономразвития.
+                        div.article-list__arrow
+                //-------------------- 10
+                div.article-list__item
+                    div.article-list__elem.article-list__elem_img.article-list__elem_img-10
+                    div.article-list__elem.article-list__elem_text
+                        a.title.title_l.article-list__link(href="/open-news-10.html").
+                            Информация для абонентов/пользователей услуги &laquo;Медиапортал MegaFon.TV&raquo;
+                        p.text.text_light.
+                            ОАО &laquo;МегаФон&raquo; информирует абонентов/пользователей услуги &laquo;Медиапортал MegaFon.TV&raquo; об&nbsp;изменении наименования пакетов, перечня Видеоконтента ряда Пакетов и&nbsp;размера Абонентской платы.
+                        div.article-list__arrow
+                    
+            button.btn-round.btn-round_outline.news__btn-more.
+                Еще

@@ -1,0 +1,8 @@
+a {
+    transition: color 0.2s linear;
+    color: $main-green;
+    text-decoration: none;
+    &:hover {
+        color: $main-purple;
+    }
+}

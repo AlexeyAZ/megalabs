@@ -1,0 +1,20 @@
+extends templates/layout
+
+block vars
+	- var title = 'О компании'
+	- var wrapperClass = ''
+	- var sidebarClass = 'sidebar_sub'
+
+block content
+	div.content
+		include templates/decor-lines
+		div.about-us.content-block.container.padding.padding_desktop-xl
+			p.about-us__title.title.title_xl.bottom-line.bottom-line_center.
+				О компании
+			p.about-us__paragraph.text.text_m.
+				Наша команда сфокусирована на&nbsp;продуктах, их&nbsp;постоянном совершенствовании в&nbsp;части удобства, функциональности и&nbsp;простоты использования для клиентов. Мы&nbsp;открыты к&nbsp;сотрудничеству со&nbsp;всеми партнерами, предлагающими интересные продукты и&nbsp;технологии.
+			p.about-us__paragraph.text.text_m.
+				Мы&nbsp;являемся дочерней компанией ПАО &laquo;МегаФон&raquo;, а&nbsp;это значит, что наши лучшие продукты могут масштабироваться на&nbsp;более чем 65&nbsp;миллионов пользователей в&nbsp;России, использовать лучшую технологическую инфраструктуру и&nbsp;тысячи точек продаж и&nbsp;обслуживания по&nbsp;всей стране.
+			p.about-us__paragraph.text.text_m.
+				На&nbsp;данный момент своего развития мы&nbsp;сфокусированы на&nbsp;российском рынке, однако в&nbsp;поисках лучшего мы&nbsp;активно работаем с&nbsp;представителями в&nbsp;Силиконовой Долине, Израиле, Западной Европе, а&nbsp;также партнерами, имеющими глобальное присутствие на&nbsp;развитых и&nbsp;развивающихся рынках.
+		div.container.about-us__img-container

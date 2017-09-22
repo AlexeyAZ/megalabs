@@ -1,0 +1,94 @@
+extends templates/layout
+
+block vars
+    - var title = 'Финансовые услуги'
+    - var wrapperClass = 'wrapper_top_100'
+    - var sidebarClass = 'sidebar_sub'
+    - var headerClass = 'header_load header_no-bg header_color_white'
+
+block content
+    div.fixed-block.finance__fixed-block
+        div.container.fixed-block__container
+            div.icon.icon_purse
+            p.title.title_xxl.
+                Финансовые<br> услуги
+            a.btn-arrow.js-anchor-link(href="#finances")
+    div.content.finance#finances
+        include templates/decor-lines
+        include templates/sidebar
+        div.content-block
+        div.container.padding.padding_desktop-xl.finance__card-container.video__intro-container
+            p.text.text_l.finance__text.
+                Бизнес-направление работает на&nbsp;перекрестке финансовых услуг и&nbsp;сервисов мобильного оператора. Новые технологии в&nbsp;сфере телекоммуникаций позволяют предоставлять абонентам максимально удобные и&nbsp;быстрые финансовые продукты.
+            p.text.text_l.finance__text.
+                Наша цель&nbsp;&mdash; стать супермаркетом финансовых услуг, объединяющим все опции: от&nbsp;сервисов в&nbsp;салонах связи до&nbsp;удаленных продуктов.
+            p.text.text_l.finance__text.
+                Стратегическое направление деятельности БН&nbsp;&laquo;Финансовые услуги&raquo;&nbsp;&mdash; превращение счета мобильного телефона в&nbsp;универсальный платежный инструмент.
+            div.finance__head
+                svg.finance__head-icon
+                    use(xlink:href="#iconCreditCard")
+                p.title.title_l.bottom-line.bottom-line_center.finance__head-title.
+                    Банковская карта &laquo;МегаФон.Банк&raquo;
+            div.photo-block.finance__photo-block
+                div.photo-block__item
+                    div.photo-block__elem.photo-block__elem_img
+                    div.photo-block__elem.photo-block__elem_text
+                        p.heading.heading_s.photo-block__title.
+                            Что такое банковская карта МегаФона?
+                        p.text.text_light.photo-block__paragraph.
+                            Полнофункциональная карта, открывающая доступ к&nbsp;деньгам на&nbsp;балансе телефона. Счет карты&nbsp;&mdash; это счет мобильного телефона. При оплате картой деньги будут списаны с&nbsp;баланса номера &laquo;МегаФона&raquo;, и&nbsp;наоборот, при пополнении номера деньги становятся доступны и&nbsp;по&nbsp;карте.
+                div.photo-block__item
+                    div.photo-block__elem.photo-block__elem_text
+                        p.heading.heading_s.photo-block__title.
+                            Ключевые преимущества карты
+                        ul.list.list_check
+                            li.list__item.list__item_check.list__item_check-purple
+                                p.text.text_light.
+                                    Бесплатное годовое обслуживание
+                            li.list__item.list__item_check.list__item_check-purple
+                                p.text.text_light.
+                                    8% годовых на остаток по счету
+                            li.list__item.list__item_check.list__item_check-purple
+                                p.text.text_light.
+                                    Сashback у партнеров «МегаФона» до 15%
+                            li.list__item.list__item_check.list__item_check-purple
+                                p.text.text_light.
+                                    Бесплатные переводы между абонентами «МегаФона»
+                            li.list__item.list__item_check.list__item_check-purple
+                                p.text.text_light.
+                                    Онлайн-сервис &laquo;МегаФон.Банк&raquo; для iOS, Android, WinPhone и&nbsp;web, позволяющий анализировать расходы по&nbsp;карте, совершать переводы и&nbsp;платежи, отслеживать баланс номеров близких, просматривать начисления cashback и&nbsp;процентов
+                    div.photo-block__elem.photo-block__elem_img
+        div.container.finance__product-container
+            div.finance__link-container
+                p.title.title_l
+                    | Перейти на 
+                    a(href="https://bank.megafon.ru/").
+                            bank.megafon.ru
+            div.finance__product
+                div.finance__product-item
+                    svg.finance__product-icon.finance__product-icon_mobile-ticket
+                        use(xlink:href="#iconMobileTicket")
+                    p.title.title_l.bottom-line.bottom-line_left.finance__product-title.
+                        Мобильный билет
+                    p.text.text_light.finance__product-paragraph.
+                        Возможность оплачивать проезд своим смартфоном в&nbsp;одно касание на&nbsp;общественном транспорте Москвы.
+                    p.text.text_light.finance__product-paragraph.
+                        Для подключения услуги необходим смартфон с&nbsp;функцией NFC и&nbsp;SIM-карта с&nbsp;&laquo;Мобильным билетом&raquo;. После активации услуги &laquo;Мобильный билет&raquo; будет работать на&nbsp;всех видах московского транспорта, где принимается к&nbsp;оплате карта &laquo;Тройка&raquo;. Пополнить &laquo;Мобильный билет&raquo; можно и&nbsp;в&nbsp;автоматическом, и&nbsp;в&nbsp;ручном режиме прямо со&nbsp;счета мобильного телефона.
+                div.finance__product-item
+                    svg.finance__product-icon.finance__product-icon_print
+                        use(xlink:href="#iconPrint")
+                    p.title.title_l.bottom-line.bottom-line_left.finance__product-title.
+                        Платежные терминалы 
+                    p.text.text_light.finance__product-paragraph.
+                        Терминалы оплаты, установленные во&nbsp;всех фирменных салонах связи &laquo;МегаФона&raquo;.
+                    p.text.text_light.finance__product-paragraph.
+                        Количество терминалов&nbsp;&mdash; около 1800 по&nbsp;РФ. Терминалы оборудованы NFC-модулем для приема платежей и&nbsp;сканером штрихкодов, что существенно повышает скорость и&nbsp;удобство работы клиента с&nbsp;терминалом.
+                div.finance__product-btn-container
+                    a.btn-round.btn-round_link.btn-round_arrow.btn-round_xs.finance__product-btn(href="http://moscow.megafon.ru/options/services/other/mobil_billet/mobil_billet.html").
+                        Все о продукте
+        include templates/feedback-block        
+
+
+
+
+            

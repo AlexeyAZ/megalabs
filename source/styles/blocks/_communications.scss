@@ -1,0 +1,124 @@
+
+.communications {
+	
+	&__fixed-block {
+		background-image: url("../images/bg/communication.jpg");
+	}
+
+	&__container {
+		padding-top: 110px;
+		padding-bottom: 120px;
+	}
+
+	&__intro-paragraph {
+		padding-right: 50px;
+		padding-left: 30px;
+	}
+
+	&__items-wrap {
+		margin-top: 37px;
+		border-top: 1px solid transparent;
+	}
+
+	&__items-wrap {
+		display: flex;
+		flex-direction: row;
+	}
+
+	&__items-column {
+		width: 50%;
+		padding-left: 30px;
+	}
+
+	&__item {
+		margin-top: 80px;
+		padding: 140px 37px 0 0;
+
+		&_megadisk {
+			background: url(../images/icon-monitor-cloud.svg) no-repeat top left;
+			background-size: 120px 122px;
+		}
+		&_emotion {
+			background: url(../images/icon-chat-bubbles.svg) no-repeat top left;
+			background-size: 122px 120px;
+		}
+		&_conference {
+			background: url(../images/icon-webcam.svg) no-repeat top left;
+			background-size: 122px 122px;
+		}
+		&_control {
+			background: url(../images/icon-map-mark-human.svg) no-repeat top left;
+			background-size: 99px 122px;
+		}
+		&_multiphone {
+			background: url(../images/icon-cellphone-waves.svg) no-repeat top left;
+			background-size: 122px 122px;
+		}
+		&_ats {
+			background: url(../images/icon-headset.svg) no-repeat top left;
+			background-size: 121px 122px;
+		}
+		&_price {
+			background: url(../images/icon-0-rub.svg) no-repeat top left;
+			background-size: 122px 122px;
+		}
+
+	}
+
+	&__item-name {
+		text-align:  left;
+
+		&::after {
+			bottom: -20px;
+		}
+	}
+
+	&__item-about {
+		margin-top: 45px;
+		line-height: 1.5;
+
+		&:nth-child(n + 3) {
+			margin-top: 18px;
+		}
+	}
+	
+	&__item-contacts {
+		@include link-envelope;
+		margin-top: 21px;
+		margin-bottom: 16px;
+		letter-spacing: 0.2px;
+	}
+
+	&__item-link {
+		display: none;
+		height: 45px;
+		width: 200px;
+		min-width: 200px;
+		margin-top: 25px;
+		padding-top: 5px;
+		text-align: right;
+		font-size: 16px;
+
+		&:hover {
+			color: #fff;
+		}
+	}
+
+	&__feedback-info {
+		margin-top: 127px;
+		padding: 0 127px;
+		letter-spacing: 0.2px;
+	}
+
+	&__vacancies {
+		padding-top: 75px;
+	}
+
+	&__vacancies-wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		margin-top: 53px;
+	}
+}
+

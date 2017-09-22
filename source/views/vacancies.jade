@@ -1,0 +1,58 @@
+extends templates/layout
+
+block vars
+	- var title = 'Вакансии'
+	- var wrapperClass = ''
+
+block content
+	div.content.vacancies
+		include templates/decor-lines
+		div.vacancies__filter.ta-center.translucent-bg
+			div.container.vacancies__filter-container
+				p.vacancies__filter-headline.container.title.title_xl.container-photo-decor-dots.
+					Ищем профессионалов
+				div.vacancies__icon.icon.icon_user
+			div.vacancies__filter-items-wrap
+				button(data-filter="all").vacancies__filter-item.text.text_m.
+					Все направления
+				button(data-filter="technology").vacancies__filter-item.text.text_m.
+					Технологии
+				button(data-filter="financial").vacancies__filter-item.text.text_m.
+					Финансовые услуги
+				button(data-filter="video").vacancies__filter-item.text.text_m.
+					Видео
+				button(data-filter="communications").vacancies__filter-item.text.text_m.
+					Объединенные коммуникации
+				button(data-filter="mobile-ads").vacancies__filter-item.text.text_m.
+					Мобильная реклама
+				button(data-filter="internet-things").vacancies__filter-item.vacancies__filter-item_enabled.text.text_m.
+					Internet of Things
+				button(data-filter="finance").vacancies__filter-item.text.text_m.
+					Бухгалтерия и Финансы
+				button(data-filter="administration").vacancies__filter-item.text.text_m.
+					Административная функция
+		div.vacancies__offers.container.vacancies__offers-container.container-decor-dots
+			div.vacancies__offers-wrap
+				a(href="vacancy-page-01.html", data-filter="video").vacancy
+					p.title.title_l.vacancy__position.
+						Старший менеджер продукта «МегаФон.ТВ»
+					p.text.text_l.vacancy__salary.
+					p.text.text_m.vacancy__city.
+						г. Москва
+				a(href="vacancy-page-02.html", data-filter="financial").vacancy
+					p.title.title_l.vacancy__position.
+						Менеджер продукта «Сервисы IP коммуникации»
+					p.text.text_l.vacancy__salary.
+					p.text.text_m.vacancy__city.
+						г. Москва
+			button.vacancies__offers-show-more.btn.btn-round.btn-transparent.text.text_l.
+				Ещё вакансии
+
+
+
+
+
+
+
+
+

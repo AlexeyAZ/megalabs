@@ -1,0 +1,70 @@
+extends templates/layout
+
+block vars
+	- var title = 'Видео'
+	- var wrapperClass = 'wrapper_top_100'
+	- var sidebarClass = 'sidebar_sub'
+	- var headerClass = 'header_load header_no-bg header_color_white'
+
+block content
+	div.fixed-block.video__fixed-block
+		div.container.fixed-block__container
+			div.icon.icon_play
+			p.title.title_xxl.
+				Видео
+			a.btn-arrow.js-anchor-link(href="#video")
+	div.content.video#video
+		include templates/decor-lines
+		include templates/sidebar
+		div.content-block
+			div.container.padding.padding_desktop-xl.video__intro-container.container-decor-dots
+				p.video__about.text.text_l.
+					Команда бизнес-направления &laquo;Видео&raquo; развивает проект &laquo;МегаФон.ТВ&raquo;. Это ОТТ-сервис оператора, ориентированный на&nbsp;весь рынок и&nbsp;при этом дающий особые преимущества для абонентов &laquo;МегаФона&raquo;: бесплатные ТВ-каналы и&nbsp;фильмы на&nbsp;тарифах и&nbsp;опциях &laquo;Всё включено&raquo;. &laquo;МегаФон.ТВ&raquo;&nbsp;&mdash; один из&nbsp;немногих сервисов в&nbsp;России, который успешно совмещает доступ и&nbsp;к&nbsp;ТВ, и&nbsp;к&nbsp;фильмам, и&nbsp;к&nbsp;сериалам. И&nbsp;все это&nbsp;&mdash; независимо от&nbsp;интернетсети и&nbsp;на&nbsp;любом устройстве: телефоне, планшете, компьютере, Smart&nbsp;TV.
+				p.video__about.text.text_l.
+					В&nbsp;портфолио команды бизнес-направления &laquo;Видео&raquo; есть и&nbsp;популярное приложение СМОТРИ+ (более 1&nbsp;млн установок), созданное под Олимпиаду в&nbsp;Сочи, а&nbsp;также ЧМХ 2014, ЧМФ 2014 и&nbsp;КХЛ 2014&ndash;2015 (в&nbsp;настоящее время приложение закрыто).
+			div.video__product.container
+				div.video__product-header.video__product-header_megaphone-tv
+					p.video__product-name.title.title_l.bottom-line.bottom-line_center.
+						МегаФон.ТВ
+				div.video__product-features-wrap
+					div.video__product-feature
+						div.video__product-feature-img.video__product-feature-img_megaphone-1
+						div.video__product-feature-about
+							p.video__product-feature-text.text.text_m.
+								Новая модель для абонентов тарифа «Все&nbsp;включено»
+							p.video__product-feature-text.text.text_m.
+								В&nbsp;мае 2015 года &laquo;МегаФон.ТВ&raquo; представил рынку новую модель, в&nbsp;рамках которой абоненты тарифных планов и&nbsp;тарифных опций &laquo;Всё включено&raquo; стали получать контент на&nbsp;специальных условиях: 50&nbsp;ТВ-каналов и&nbsp;до&nbsp;4&nbsp;фильмов ежемесячно теперь доступны абонентам без дополнительной платы.
+							p.video__product-feature-text.text.text_m.
+								Эта модель примечательна тем, что одновременно направлена на&nbsp;повышение лояльности базы &laquo;МегаФона&raquo; и&nbsp;на&nbsp;развитие рынка платного легального контента.
+							p.video__product-feature-text.text.text_m.
+								Предоставляя своей абонентской базе фильмовой контент в&nbsp;рамках тарифных планов и&nbsp;тарифных опций, &laquo;МегаФон&raquo; снимает для пользователей барьеры в&nbsp;потреблении легального платного контента, а&nbsp;для правообладателей открывает новые возможности для монетизации контента.
+					div.video__product-feature
+						div.video__product-feature-img.video__product-feature-img_megaphone-2
+						div.video__product-feature-about
+							p.video__product-feature-text.text.text_m
+								span.text-no-transform.
+									МегаФон.ТВ 
+								| СЕГОДНЯ
+							p.video__product-feature-text.text.text_m.
+								Сегодня в&nbsp;&laquo;МегаФон.ТВ&raquo; собран уникальный для рынка набор контента: более 130&nbsp;ТВканалов, в&nbsp;том числе в&nbsp;HD-качестве, фильмы от&nbsp;голливудских, европейских и&nbsp;российских студий, детский контент, а&nbsp;также сериалы. 
+							p.video__product-feature-text.text.text_m.
+								Сервис доступен на&nbsp;мобильных устройствах на&nbsp;базе&nbsp;ОС iOS и&nbsp;Android, на&nbsp;PC, на&nbsp;Smart TV&nbsp;телевизорах Samsung и&nbsp;LG и&nbsp;через устройства Chromecast. Оплата контента происходит с&nbsp;лицевого счета оператора.
+							p.video__product-feature-text.text.text_m.
+								В&nbsp;планах&nbsp;&mdash; дальнейшее расширение библиотеки контента, доступных устройств (включая Apple TV, Android&nbsp;TV, телевизоры и&nbsp;приставки), а&nbsp;также доступ к&nbsp;эксклюзивному контенту.
+					div.video__product-link.title.title_l Перейти на 
+						a(href="https://megafon.tv/").link.
+							megafon.tv
+			div.video__vacancies.container
+				p.video__vacancies-headline.title.title_xl.
+					Вакансии направления
+				div.video__vacancies-wrap
+					a(href="vacancy-page-01.html", data-filter="video").vacancy
+						p.title.title_l.vacancy__position.
+							Старший менеджер продукта «МегаФон.ТВ»
+						p.text.text_l.vacancy__salary.
+						p.text.text_m.vacancy__city.
+							г. Москва
+			include templates/feedback-block
+
+
+

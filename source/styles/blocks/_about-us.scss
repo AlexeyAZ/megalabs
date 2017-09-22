@@ -1,0 +1,41 @@
+
+.about-us {
+	//margin-top: 130px;
+	padding-top: calc(#{$header-nav-height-desktop-xl} + 80px);
+	//padding-bottom: 822px;
+	
+	min-height: 100vh;
+
+	&__title {
+		margin-bottom: 113px;
+
+		&::after {
+			bottom: -61px;
+		}
+		
+	}
+
+	&__intro-paragraph {
+		margin-top: 127px;
+		margin-bottom: 49px;
+	}
+
+	&__paragraph {
+		margin-top: 15px;
+	}
+
+	&__img-container {
+		//transform: translateY(50px);
+		transition: all 0.8s linear;
+		background: url(../images/icon-flask-items.svg) no-repeat center top 0;
+		background-size: 564px 1114px;
+		position: relative;
+		height: 800px;
+		opacity: 0;
+		&_visible {
+			transform: translateY(0);
+			opacity: 1;
+			margin-top: -260px;
+		}
+	}
+}

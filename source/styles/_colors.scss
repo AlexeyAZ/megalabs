@@ -1,0 +1,33 @@
+$main-gray: #6c747e;
+$dark-gray: #4c5366;
+$main-purple: #8441af;
+$main-green: #5bb682;
+
+$logo-green: #60b685;
+
+$header-opacity: rgba(255,255,255,0.95);
+$header-transclucent-gray: rgba(0,0,0,0.1);
+$header-border: #e2e3e5;
+
+$input-hover-bg: #f9f9f9;
+
+$footer-bg: #f1f1f1;
+$footer-link-border-bg: #e2e3e5;
+
+$sidebar-border: $footer-link-border-bg;
+
+$btn-box-shadow: rgba(0, 0, 0, 0.2);
+
+$fixed-block-bg: rgba(0, 0, 0, 0.45);
+
+$decor-lines-gray: $sidebar-border;
+$decor-lines-light: rgba(255,255,255,0.4);
+
+$main-sidebar-border: $decor-lines-gray;
+$main-sidebar-border-light: $decor-lines-light;
+
+$decor-lines-border-dark: rgba(0,0,0,0.3);
+$decor-lines-border-light: #c2c2c2; //rgba(255,255,255,0.7);
+$decor-lines-dot-dark: rgba(0,0,0,0.2);
+$decor-lines-dot-light: $decor-lines-border-light; //rgba(255,255,255,0.9);
+$decor-lines-border-main: #979ca2;

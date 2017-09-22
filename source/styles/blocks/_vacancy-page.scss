@@ -1,0 +1,182 @@
+
+.vacancy-page {
+
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding-top: 80px;
+		height: 100%;
+	}
+
+	&__header {
+		position: relative;
+		height: 400px;
+		margin-top: 130px;
+		background: url(../images/bg/vacancies.jpg) no-repeat center;
+		background-size: cover;
+		z-index: 10;
+	}
+
+	&__name {
+		color: #fff;
+	}
+
+	&__outlines {
+		margin-top: 18px;
+		font-size: 24px;
+		font-family: "RobotoLight";
+		letter-spacing: 1.2px;
+		color: #fff;
+	}
+	
+	&__return-btn {
+		display: block;
+		margin: 76px auto 0 auto;
+	}
+
+	&__details {
+		display: flex;
+		flex-direction: row;
+		padding-bottom: 97px;
+	}
+
+	&__details-column {
+		width: 50%;
+		padding-left: 30px;
+	}
+
+	&__details-list {
+		margin-top: 75px;
+
+		&:nth-child(n+2) {
+			margin-top: 68px;
+		}
+	}
+
+	&__details-list-headline {
+		text-align: left;
+
+		&::after {
+			top: 50px;
+		}
+	}
+
+	&__details-list-item {
+		position: relative;
+		margin-top: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		text-align: left;
+		line-height: 1.5;
+
+		&:first-child {
+			padding-left: 0;
+
+			&::before {
+				display: none;
+			}
+		}
+
+		&:nth-child(2) {
+			margin-top: 40px;
+		}
+
+		&::before {
+			display: block;
+			content: "";
+			position: absolute;
+			width: 5px;
+			height: 5px;
+			top: 11px;
+			left: 0;
+			border-radius: 50%;
+			background-color: $main-purple;
+		}
+	}
+
+	&__form-wrap {
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		padding-top: 108px;
+		padding-bottom: 120px;
+		border-top: 1px solid $sidebar-border;
+		background-color: #fff;
+		z-index: 4;
+	}
+
+	&__form {
+		width: 640px;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+
+		& input {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__form-file-upload {
+		display: inline-block;
+		margin-top: 10px;
+		margin-left: 20px;
+	}
+
+	&__form-file-upload-text {
+		display: inline-block;
+		padding-right: 20px;
+		font-family: "RobotoRegular";
+		color: $main-green;
+		background: url(../images/arrow-down-short.svg) no-repeat right top 9px;
+		cursor: pointer;
+	}
+
+	&__form-file-input {
+		display: none;
+	}
+
+	&__form-checkbox-wrap {
+		position: relative;
+		margin-left: 20px;
+	}
+
+	&__form-check-label {
+		display: block;
+		position: relative;
+		margin-top: 47px;
+		padding-left: 43px;
+		cursor: pointer;
+
+		&::before {
+			position: absolute;
+			display: block;
+			content: "";
+			width: 20px;
+			height: 20px;
+			left: 0;
+			top: 4px;
+			border: 1px solid $main-purple;
+			background: transparent;
+			background-size: 13px 9px;
+		}
+	}
+
+	&__form-check {
+		position: absolute;
+		visibility: hidden;
+
+		&:checked + label::before {
+			background: url(../images/icon-check.svg) no-repeat center left 3px;
+		}
+	}
+
+	&__form-submit {
+		display: block;
+		margin-top: 80px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

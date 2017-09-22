@@ -1,0 +1,72 @@
+@mixin link($color, $hover: $color, $focus: $hover, $active: $hover, $visited: $hover) {
+    color: $color;
+    &:hover {
+        color: $hover;
+    }
+    &:focus {
+        color: $focus;
+    }
+    &:active {
+        color: $active;
+    }
+    &:visited {
+        color: $visited;
+    }
+}
+
+@mixin link-envelope {
+  position: relative;
+  display: inline-block;
+  padding-left: 29px;
+
+  &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 14px;
+      height: 11px;
+      left: 0;
+      top: 4px;
+      background: url(../images/icon-mail-green.svg) no-repeat left top;
+      background-size: 100%;
+      opacity: 1;
+      transition: all 0.2s linear;
+    }
+    &::after {
+      position: absolute;
+      display: block;
+      content: "";
+      width: 14px;
+      height: 11px;
+      left: 0;
+      top: 4px;
+      background: url(../images/icon-mail-purple.svg) no-repeat left top;
+      background-size: 100%;
+      opacity: 0;
+      transition: all 0.2s linear;
+    }
+
+    &:hover::before {
+      opacity: 0;
+    }
+    &:hover::after {
+      opacity: 1;
+    }
+}
+
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
+
+@mixin clearfix {
+
+  &::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}

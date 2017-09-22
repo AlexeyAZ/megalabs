@@ -1,0 +1,25 @@
+- var sidebarClass = ''
+
+block vars
+
+div.sidebar(class='#{sidebarClass}')
+    a.sidebar__item(href="mobile_ads.html")
+        svg.sidebar__item-img
+            use(xlink:href="#iconMobile")
+        |Мобильная<br> реклама
+    a.sidebar__item(href="communications.html")
+        svg.sidebar__item-img
+            use(xlink:href="#iconCloud")
+        |Объединенные<br> коммуникации
+    a.sidebar__item(href="video.html")
+        svg.sidebar__item-img
+            use(xlink:href="#iconPlay")
+        |Видео
+    a.sidebar__item(href="finance.html")
+        svg.sidebar__item-img
+            use(xlink:href="#iconPurse")
+        |Финансовые<br> услуги
+    a.sidebar__item(href="internet_things.html")
+        svg.sidebar__item-img.sidebar__item-img_radar
+            use(xlink:href="#iconRadar")
+        |IoT

@@ -1,0 +1,23 @@
+extends templates/layout
+
+block vars
+    - var title = ''
+
+block content
+    div.content.open-news
+        include templates/decor-lines
+        div.container.padding_desktop-xl
+            div.open-news__btn-close-container.ta-center
+                a(href="/news.html").btn-circle.btn-circle_close.open-news__btn-close
+            p.title.title_l.open-news__heading.
+                Онлайн-кинотеатр &laquo;МегаФон.ТВ&raquo; подписал соглашение о&nbsp;партнёрстве с&nbsp;американской студией 20th Century Fox (20-й Век Фокс). Теперь пользователям доступно более 100 популярных фильмов киностудии.
+            div.open-news__article
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            &laquo;МегаФон.ТВ&raquo; покажет все новые фильмы и&nbsp;&laquo;золотой каталог&raquo; студии &laquo;20-й Век Фокс&raquo;. Уже сейчас в&nbsp;онлайн-кинотеатре доступны новинки 2016&nbsp;&mdash; очередная часть популярного мультфильма &laquo;Ледниковый период: Столкновение неизбежно&raquo;, продолжение известной франшизы &laquo;Люди Икс: Апокалипсис&raquo;, а&nbsp;в&nbsp;декабре запланирован выход анимационной комедии &laquo;Тролли&raquo;, недавно возглавившей российский прокат по&nbsp;сборам в&nbsp;кинотеатрах.
+                        p.text.text_light.open-news__photo-block-text.
+                            Помимо новинок, которые будут открываться после кинопроката, в&nbsp;библиотечном каталоге &laquo;МегаФон.ТВ&raquo; можно посмотреть более 100 фильмов &laquo;20-й Век Фокс&raquo;, например, &laquo;Аватар&raquo;, &laquo;Титаник&raquo;, все части франшизы &laquo;Люди Икс&raquo;, а&nbsp;также все лучшие фильмы из&nbsp;каталога киностудии DreamWorks, известной своими успешными анимационными проектами &laquo;Шрек&raquo;, &laquo;Мадагаскар&raquo;, &laquo;Кунг-фу Панда&raquo; и&nbsp;другими.
+
+            div.open-news__btn-top-container.ta-center
+                button.btn-circle.btn-circle_top.open-news__btn-to-top.js-btn-top

@@ -1,0 +1,13 @@
+.links {
+    padding-top: $header-nav-height-desktop-xl;
+    padding-bottom: $header-nav-height-desktop-xl;
+    .container {
+        padding-top: 100px;
+    }
+    li {
+        margin-bottom: 20px;
+    }
+    &__sub-link {
+        padding-left: 30px;
+    }
+}

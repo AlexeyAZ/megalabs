@@ -1,0 +1,56 @@
+.icon {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    &_arrow {
+        background-image: url("../images/arrow-green.svg");
+        height: 50px;
+        width: 20px;
+    }
+    &_home {
+        background-image: url("../images/icon-home-green.svg");
+        height: 123px;
+        width: 100px;
+    }
+    &_radar {
+        background-image: url("../images/icon-radar-green.svg");
+        height: 122px;
+        width: 122px;
+    }
+    &_cellphone {
+        background-image: url("../images/icon-cellphone.svg");
+        height: 125px;
+        width: 172px;
+    }
+    &_purse {
+        background-image: url("../images/icon-purse-green.svg");
+        height: 122px;
+        width: 136px;
+    }
+    &_cloud {
+        background-image: url("../images/icon-cloud-green.svg");
+        height: 122px;
+        width: 183px;
+    }
+    &_play {
+        background-image: url("../images/icon-play-green.svg");
+        height: 122px;
+        width: 124px;
+    }
+    &_social-inst {
+        background-image: url("../images/icon-inst-green.svg");
+        height: 30px;
+        width: 30px;
+    }
+    &_social-fb {
+        background-image: url("../images/icon-fb-green.svg");
+        height: 30px;
+        width: 30px;
+    }
+    &_user {
+        background-image: url("../images/icon-user.svg");
+        height: 122px;
+        width: 122px;
+    }
+}

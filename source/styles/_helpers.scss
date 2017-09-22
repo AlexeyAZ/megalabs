@@ -1,0 +1,22 @@
+.padding {
+    &_desktop-xl {
+        padding-left: $padding-left-right-desktop-xl;
+        padding-right: $padding-left-right-desktop-xl;
+    }
+    &_text-xl {
+        padding-right: 180px;
+        padding-left: 180px;
+    }
+}
+.translucent-bg {
+    &:before {
+        pointer-events: none;
+        content: "";
+        background-color: $fixed-block-bg;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+    }
+}

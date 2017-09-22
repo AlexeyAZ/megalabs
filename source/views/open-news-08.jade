@@ -1,0 +1,32 @@
+extends templates/layout
+
+block vars
+    - var title = ''
+
+block content
+    div.content.open-news
+        include templates/decor-lines
+        div.container.padding_desktop-xl
+            div.open-news__btn-close-container.ta-center
+                a(href="/news.html").btn-circle.btn-circle_close.open-news__btn-close
+            p.title.title_l.open-news__heading.
+                Две недели бесплатных сериалов на&nbsp;&laquo;МегаФон&nbsp;ТВ&raquo;
+            div.open-news__article
+                div.open-news__photo-block.bottom-line.bottom-line_center
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            &laquo;МегаФон&raquo; приготовил специальную акцию для любителей сериалов. При первом подключении пакета сериалов &laquo;Амедиатека&raquo; на&nbsp;&laquo;МегаФон&nbsp;ТВ&raquo; абонент получает бесплатный доступ ко&nbsp;всему каталогу сериалов, включая премьеры, на&nbsp;две недели. Каталог &laquo;Амедиатека&raquo; на&nbsp;&laquo;МегаФон&nbsp;ТВ&raquo; включает более 100 сериалов на&nbsp;любой вкус, в&nbsp;том числе такие хиты как &laquo;Игра Престолов&raquo;, &laquo;Карточный домик&raquo;, &laquo;Родина&raquo;, &laquo;Банши&raquo;, &laquo;Американская история ужасов&raquo; и&nbsp;многие другие. Предложение действует для новых подписчиков пакета &laquo;Амедиатека&raquo;, установивших мобильное приложение &laquo;МегаФон&nbsp;ТВ&raquo;.
+                        p.text.text_light.open-news__photo-block-text.
+                            Кроме того, в&nbsp;октябре зрители &laquo;МегаФон&nbsp;ТВ&raquo; смогут увидеть одновременно со&nbsp;всем миром премьеры сериалов &laquo;Американская история ужасов&raquo;, &laquo;Мир дикого Запада&raquo; с&nbsp;Энтони Хопкинсом и&nbsp;&laquo;Развод&raquo; с&nbsp;Сарой Джессикой Паркер. Чтобы стать участником акции, нужно установить приложение &laquo;МегаФон&nbsp;ТВ&raquo; на&nbsp;свой смартфон, планшет или телевизор с&nbsp;поддержкой SMART TV. После этого необходимо подключить пакет сериалов &laquo;Амедиатека&raquo;. Пользователям, подключившим в&nbsp;период срока действия акции пакет &laquo;Амедиатека&raquo;, предоставляется бесплатный доступ к&nbsp;пакету на&nbsp;14&nbsp;дней. После этого подписка будет стоить 17&nbsp;₽ в&nbsp;сутки. Видео-трафик бесплатный для тарифов Всё включено M,L,XL,VIP и&nbsp;Интернет опций M,L,XL и&nbsp;Планшет&nbsp;S.
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text
+                        p.text.text_light.open-news__photo-block-text.
+                            Помимо сериалов на&nbsp;&laquo;МегаФон&nbsp;ТВ&raquo; зрителей ждёт более 1000&nbsp;фильмов, в&nbsp;том числе новинок кинопроката, и&nbsp;свыше 150 телеканалов в&nbsp;любом месте и&nbsp;в&nbsp;любое время.
+                        p.text.text_light.open-news__photo-block-text.
+                            &laquo;МегаФон&raquo; постоянно расширяет каталог видео-контента &laquo;МегаФон&nbsp;ТВ&raquo; и&nbsp;предлагает абонентам интересные акции с&nbsp;правообладателями и&nbsp;прокатчиками,&nbsp;&mdash; прокомментировал Андрей Кушнарев, директор направления видео компании &laquo;МегаЛабс&raquo;. &mdash;&nbsp;Благодаря этим усилиям у&nbsp;&laquo;МегаФон&nbsp;ТВ&raquo; уже более миллиона зрителей, и&nbsp;их&nbsp;число увеличивается ежедневно. Сериалы из&nbsp;&laquo;Амедиатеки&raquo; помогут скоротать длинные осенне-зимние вечера и&nbsp;поднять настроение в&nbsp;любое время и&nbsp;в&nbsp;любом месте, даже в&nbsp;пробке&quot;.
+
+                    div.open-news__photo-block-item.open-news__photo-block-item_img
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ye7I4HJIzII" frameborder="0" allowfullscreen></iframe>
+
+            div.open-news__btn-top-container.ta-center
+                button.btn-circle.btn-circle_top.open-news__btn-to-top.js-btn-top

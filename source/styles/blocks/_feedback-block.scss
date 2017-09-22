@@ -1,0 +1,18 @@
+.feedback-block {
+    background-color: white;
+    border-top: 1px solid $sidebar-border;
+    position: relative;
+    padding-top: $feedback-block-padding-top-desktop-xl;
+    padding-bottom: $feedback-block-padding-bottom-desktop-xl;
+    z-index: 4;
+    &__title {
+        margin-bottom: 80px;
+    }
+    &__form {
+        margin: 0 auto;
+        width: $form-width-desktop-xl;
+    }
+    &__btn {
+        margin-top: 45px;
+    }
+}

@@ -1,0 +1,52 @@
+extends templates/layout
+
+block vars
+    - var title = 'Карьера в MegaLabs'
+
+
+block content
+    div.content.career
+        include templates/decor-lines
+        div.container.career__container.container-decor-dots
+            p.title.title_xl.career__heading.bottom-line.bottom-line_center.
+                Карьера в MegaLabs
+            div.career__cards
+                div.career__cards-item.animated.fadeInUp
+                    svg.career__cards-item-img
+                        use(xlink:href="#iconInnovation")
+                    p.title.title_l.career__cards-item-title.
+                        Инновации 
+                    p.text.text_light.
+                        Мы&nbsp;верим в&nbsp;то, что делаем, и&nbsp;не&nbsp;боимся браться за&nbsp;то, чего до&nbsp;нас никто не&nbsp;пробовал. Мы&nbsp;дадим тебе возможность создавать продукты, которые окажутся полезными для сотен, тысяч, миллионов людей.
+                div.career__cards-item.animated.fadeInUp
+                    svg.career__cards-item-img
+                        use(xlink:href="#iconReputation")
+                    p.title.title_l.career__cards-item-title.
+                        Отличная команда 
+                    p.text.text_light.
+                        Мы&nbsp;ценим талант и&nbsp;вклад каждого. Здесь каждый может высказаться, быть услышанным и&nbsp;получить поддержку.
+                div.career__cards-item.animated.fadeInUp
+                    svg.career__cards-item-img
+                        use(xlink:href="#iconEasy")
+                    p.title.title_l.career__cards-item-title.
+                        Простота <br>и открытость  
+                    p.text.text_light.
+                        Мы&nbsp;все друг с&nbsp;другом на&nbsp;&laquo;ты&raquo;, независимо от&nbsp;ранга и&nbsp;статуса. Мы&nbsp;общаемся без лишнего пафоса, просто и&nbsp;прямо. С&nbsp;юмором, но&nbsp;по&nbsp;делу.
+                div.career__cards-item.animated.fadeInUp
+                    svg.career__cards-item-img
+                        use(xlink:href="#iconEvolution")
+                    p.title.title_l.career__cards-item-title.
+                        Развитие  
+                    p.text.text_light.
+                        Мы&nbsp;точно знаем, что здесь ты&nbsp;получишь уникальную возможность расти вместе с&nbsp;реализуемым проектом.
+                div.career__cards-item.animated.fadeInUp
+                    svg.career__cards-item-img
+                        use(xlink:href="#iconTeam")
+                    p.title.title_l.career__cards-item-title.
+                        Репутация   
+                    p.text.text_light.
+                        Мы&nbsp;гордимся тем, что являемся неотъемлемой частью &laquo;МегаФона&raquo;, и&nbsp;несем ответственность за&nbsp;свои продукты перед десятками миллионов клиентов одного из&nbsp;лучших операторов России.
+            a(href="/vacancies.html").btn-round.career__vacancies-link.animated.fadeInUp.
+                Наши вакансии
+
+

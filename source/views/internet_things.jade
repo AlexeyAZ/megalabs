@@ -1,0 +1,114 @@
+extends templates/layout
+
+block vars
+    - var title = 'Интернет вещей'
+    - var wrapperClass = 'wrapper_top_100'
+    - var sidebarClass = 'sidebar_sub'
+    - var headerClass = 'header_load header_no-bg header_color_white'
+
+block content
+    div.fixed-block.internet-things__fixed-block
+        div.container.fixed-block__container
+            div.icon.icon_home
+            p.title.title_xxl.
+                Интернет вещей
+            p.title.title_xl.internet-things__subtitle.
+                Internet of Things
+            a.btn-arrow.js-anchor-link(href="#internet-things")
+    div.content.internet-things#internet-things
+        include templates/decor-lines
+        include templates/sidebar
+        div.content-block
+            div.container.padding.padding_desktop-xl.internet-things__container
+                p.text.text_l.
+                    С&nbsp;помощью данного сервиса вы&nbsp;можете удаленно включать и&nbsp;выключать электроприборы, отслеживать незаконное проникновение в&nbsp;вашу квартиру, наблюдать за&nbsp;происходящим дома через видеокамеру, проверять качество воздуха, получать мгновенную информацию о&nbsp;задымлении, определять местоположение детей и&nbsp;домашних животных, следить за&nbsp;своим здоровьем и&nbsp;многое другое.
+                div.internet-things__product
+                    p.title.title_l.internet-things__product-title.
+                        Продукт «LifeControl» представляет собой<br> экосистему IoT устройств
+                    p.title.title_m.
+                        Центр умного дома
+                    div.internet-things__product-img.ta-center
+                        img(src="images/internet-things/hub.png" alt="")
+                    p.text.text_light.ta-center.bottom-line.bottom-line_center.internet-things__product-description.
+                        Это интеллектуальный командный пункт (hub). Он&nbsp;объединяет устройства Life Control в&nbsp;единую экосистему, чтобы сделать вашу жизнь более защищенной и&nbsp;комфортной. Устройства Life Control позволяют:
+                div.internet-things__products-container
+                    p.title.title_m.
+                        Сенсоры умного дома
+                    div.internet-things__products
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                УМНАЯ ЛАМПА
+                            p.text.text_light.
+                                Освещать пространство, создавая уют в вашем доме
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                Умная розетка
+                            p.text.text_light.
+                                Управлять бытовыми приборами из любой точки земного шара
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                Датчик открытия и закрытия дверей
+                            p.text.text_light.
+                                Быть в курсе всех незваных гостей
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                Датчик движения
+                            p.text.text_light.
+                                Быть в курсе любых передвижений в доме
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                Wi-Fi камера 
+                            p.text.text_light.
+                                Наблюдать за происходящим дома в реальном времени, где бы вы ни были
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                Датчик протечки воды
+                            p.text.text_light.
+                                Узнавать даже о незаметных протечках, чтобы вовремя их устранять
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                Фитнес-трекер
+                            p.text.text_light.
+                                Следить за результатами своей активности, чтобы быть в тонусе
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                Датчик дыма
+                            p.text.text_light.
+                                Быстро узнавать о любых признаках возгорания, чтобы вовремя его предотвратить
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                Датчик качества воздуха
+                            p.text.text_light.
+                                Улучшать атмосферу в доме
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                Датчик ухода за растениями
+                            p.text.text_light.
+                                Создавать благоприятные условия для своих растений
+                        div.internet-things__products-item
+                            div.internet-things__products-img
+                            p.heading.heading_s.internet-things__products-item-title.
+                                Геотрекер 
+                            p.text.text_light.
+                                Всегда знать, где находится то, что вам дорого
+                div.internet-things__link-container
+                    p.title.title_l
+                        | Перейти на 
+                        a(href="https://lifecontrol.ru/").
+                             lifecontrol.ru
+            include templates/feedback-block
+
+
+                
+                
+                

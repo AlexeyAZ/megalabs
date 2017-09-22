@@ -1,0 +1,42 @@
+@media screen and (max-width: 1440px) {
+    body {
+        min-width: 1024px;
+    }
+    .container {
+        width: 860px;
+    }
+    .sidebar_sub {
+        width: $sidebar-width-desktop-l;
+        .sidebar__item {
+
+            font-size: 0;
+        }
+    }
+    .decor-lines {
+        &__container {
+            width: $container-width-desktop-l;
+        }
+    }
+    .fixed-block {
+        min-width: $container-width-desktop-l;
+    }
+    .header {
+        min-width: $container-width-desktop-l;
+    }
+    .main {
+        &__about-title {
+            margin-bottom: 50px;
+        }
+    }
+    .title {
+        &_xxl {
+            font-size: 80px;
+            margin: 20px 0;
+        }
+    }
+    .text {
+        &_l {
+            font-size: 16px;
+        }
+    }
+}

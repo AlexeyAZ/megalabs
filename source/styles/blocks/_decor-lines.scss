@@ -1,0 +1,154 @@
+.decor-lines {
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 4;
+    &_no-fix {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        //bottom: auto;
+        z-index: -1;
+        .decor-lines__block {
+            width: 20%;
+        }
+    }
+    &_border-main {
+        .decor-lines__container-item {
+            &_light {
+                .decor-lines__block {
+                    &:before {
+                        background-color: $decor-lines-border-main;
+                    }
+                    //border-right: 1px solid $decor-lines-border-main;
+                    &:nth-child(1) {
+                        //border-left: 1px solid $decor-lines-border-main;
+                        &:after {
+                            background-color: $decor-lines-border-main;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &_dot-white {
+        .decor-lines__point {
+            background-color: rgba(255,255,255,0.8);
+        }
+    }
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        position: relative;
+        height: 100%;
+        width: $container-width-desktop-xl;
+    }
+    &__container-item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        width: 100%;
+        &_dark {
+            z-index: 1;
+            .decor-lines__block {
+                //border-right: 1px solid $decor-lines-border-dark;
+                position: relative;
+                width: 16.6%;
+                &:nth-child(1) {
+                    //border-left: 1px solid $decor-lines-border-dark;
+                }
+                &:nth-child(3) {
+                    width: calc(16.6% + 1px);
+                }
+            }
+        }
+        &_light {
+            z-index: 2;
+            .decor-lines__block {
+                //border-right: 1px solid $decor-lines-border-light;
+                position: relative;
+                width: 16.6%;
+                &:after,
+                &:before {
+                    background-color: $decor-lines-border-light;
+                    opacity: 0.4;
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 1px;
+                    z-index: 2;
+                }
+                &:before {
+                    content: "";
+                    right: -1px;
+                }
+                &:nth-child(1) {
+                    //border-left: 1px solid $decor-lines-border-light;
+                    &:after {
+                        content: "";
+                        left: -1px;
+                    }
+                    .decor-lines__point_left {
+                        top: 20%;
+                    }
+                    .decor-lines__point_right {
+                        top: 10%;
+                    }
+                }
+                &:nth-child(2) {
+                    .decor-lines__point_right {
+                        top: 80%;
+                    }
+                }
+                &:nth-child(3) {
+                    width: calc(16.6% + 1px);
+                    .decor-lines__point_right {
+                        top: 8%;
+                    }
+                }
+                &:nth-child(4) {
+                    .decor-lines__point_right {
+                        top: 70%;
+                    }
+                }
+                &:nth-child(5) {
+                    .decor-lines__point_right {
+                        top: 12%;
+                    }
+                }
+                &:nth-child(6) {
+                    .decor-lines__point_right {
+                        top: 20%;
+                    }
+                }
+            }
+        }
+    }
+    &__point {
+        transition: top 2s linear;
+        background-color: $decor-lines-dot-light;
+        border-radius: 50%;
+        overflow: hidden;
+        //opacity: 0.4;
+        position: absolute;
+        top: 0;
+        height: 5px;
+        width: 5px;
+        z-index: 1;
+        &_left {
+            left: -3px;
+        }
+        &_right {
+            right: -3px;
+        }
+    }
+}

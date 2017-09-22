@@ -1,0 +1,93 @@
+.article-list {
+    overflow: hidden;
+
+    &__elem {
+        position: relative;
+        height: 100%;
+        min-height: $article-list-item-elem-height-desktop-xl;
+        width: $article-list-item-width-desktop-xl;
+    }
+    &__elem_img {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &:before {
+            content: "";
+            background-image: url("../images/decor-arrow.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: calc(50% - 10px);
+            right: -20px;
+            height: 35px;
+            width: 75px;
+            transform: rotate(90deg);
+            
+        }
+        &-01 {
+            background-image: url(../images/open-news/News1_main.jpg);
+        }
+        &-02 {
+            background-image: url(../images/open-news/News2_main.png);
+        }
+        &-03 {
+            background-image: url(../images/open-news/News3_main.jpg);
+        }
+        &-04 {
+            background-image: url(../images/open-news/News4_main.jpg);
+        }
+        &-05 {
+            background-image: url(../images/open-news/News5_main.jpg);
+        }
+        &-08 {
+            background-image: url(../images/open-news/News8_main.jpg);
+        }
+        &-09 {
+            background-image: url(../images/open-news/News9_main.jpg);
+        }
+        &-10 {
+            background-image: url(../images/open-news/News10_main.jpg);
+        }
+        &-ph {
+            background-image: url("../images/open-news/nopic.jpg");
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: row;
+
+        &:nth-child(2n) {
+            flex-direction: row-reverse;
+
+            & .article-list__elem_img::before {
+                transform: rotate(-90deg);
+                left: -21px;
+            }
+        }
+
+    }
+    
+    &__elem_text {
+        text-align: left;
+        padding: 25px 35px 45px;
+    }
+    &__link {
+        display: inline-block;
+        color: $main-green;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    &__arrow {
+        position: absolute;
+        right: 45px;
+        bottom: 31px;
+        width: 48px;
+        height: 20px;
+        background-image: url(../images/arrow-right-green.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100% auto;
+    }
+}

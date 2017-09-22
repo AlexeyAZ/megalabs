@@ -1,0 +1,108 @@
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.btn {
+
+}
+.btn-arrow {
+    background-image: url("../images/arrow-green.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 50px;
+    width: 20px;
+}
+.btn-round {
+    transition: all 0.2s linear;
+    background-color: $main-green;
+    border: 2px solid $main-green;
+    border-radius: $btn-round-height / 2;
+    display: inline-block;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    height: $btn-round-height;
+    min-width: $btn-round-min-width;
+    &_link {
+        @include link(white);
+        box-shadow: 0 6px 13px 0 $btn-box-shadow;
+        padding-top: 16px;
+    }
+    &:hover {
+        background-color: $main-purple;
+        border-color: $main-purple;
+        color: #fff;
+    }
+    &_outline {
+        background-color: transparent;
+        border: 2px solid $main-green;
+        color: $main-green;
+        &:hover {
+            background-color: transparent;
+            border-color: $main-purple;
+            color: $main-purple;
+        }
+    }
+    &_arrow {
+        padding-right: 60px;
+        background-image: url(../images/arrow-right-white.svg);
+        background-repeat: no-repeat;
+        background-position: center right 20px;
+    }
+    &_xs {
+        padding-top: 12px;
+        font-size: 16px;
+        height: $btn-round-height-xs;
+        min-width: $btn-round-min-width-xs;
+    }
+}
+.btn-circle {
+    transition: all 0.2s linear;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    height: $btn-circle-size;
+    width: $btn-circle-size;
+    &_close {
+        background-color: $main-green;
+        background-image: url("../images/icon-cross.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        &:hover {
+            background-color: $main-purple;
+            transform: rotate(90deg);
+        }
+    }
+    &_top {
+        border: 2px solid $main-green;
+        &:before {
+            content: "";
+            transition: all 0.2s linear;
+            transform: rotate(45deg);
+            border-top: 2px solid $main-green;
+            border-left: 2px solid $main-green;
+            display: inline-block;
+            margin-bottom: -4px;
+            height: $btn-circle-top-arrow-size;
+            width: $btn-circle-top-arrow-size;
+        }
+        &:hover {
+            border-color: $main-purple;
+            &:before {
+                border-color: $main-purple;
+            }
+        }
+    }
+}
+.btn-transparent {
+    color: $main-green;
+    background-color: transparent;
+
+    &:hover {
+        color: $main-purple;
+        background-color: transparent;
+        border-color: $main-purple;
+    }
+}

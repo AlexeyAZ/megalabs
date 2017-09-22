@@ -1,0 +1,78 @@
+extends templates/layout
+
+block vars
+    - var title = ''
+
+block content
+    div.content.open-news
+        include templates/decor-lines
+        div.container.padding_desktop-xl
+            div.open-news__btn-close-container.ta-center
+                a(href="/news.html").btn-circle.btn-circle_close.open-news__btn-close
+            p.title.title_l.open-news__heading.
+                Информация для абонентов/пользователей услуги <br>&laquo;Медиапортал MegaFon.TV&raquo;
+            div.open-news__article
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            Уважаемые абоненты/пользователи!
+                        p.text.text_light.open-news__photo-block-text.
+                            ОАО &laquo;МегаФон&raquo; информирует абонентов/пользователей услуги &laquo;Медиапортал MegaFon.TV&raquo; об&nbsp;изменении наименования пакетов, перечня Видеоконтента ряда Пакетов и&nbsp;размера Абонентской платы.
+                        p.text.text_light.open-news__photo-block-text.open-news__photo-block-text_increased-margintop.
+                            C апреля 2015 года Абонентская плата составит:
+
+                        table.open-news__table
+                            tbody
+                                tr
+                                    th Название пакета
+                                    th АП, руб./сутки, в т.ч. НДС
+                                    th Новое название пакета
+                                tr
+                                    td Основной
+                                    td 8
+                                    td 
+                                tr 
+                                    td Стартовый
+                                    td 1
+                                    td
+                                tr 
+                                    td HD
+                                    td 15
+                                    td 
+                                tr
+                                    td Спортивный
+                                    td 5
+                                    td Спортивный HD
+                                tr
+                                    td Музыкальный
+                                    td 5
+                                    td Музыкальный HD
+                                tr
+                                    td Международный
+                                    td 1
+                                    td 
+                                tr
+                                    td Познавательный
+                                    td 3
+                                    td 
+                                tr
+                                    td Детский
+                                    td 2 
+                                    td Детский HD
+                                tr
+                                    td Кино
+                                    td 3
+                                    td Кино HD
+                                tr
+                                    td Amedia Premium HD
+                                    td 6
+                                    td 
+                                tr
+                                    td 18+
+                                    td 7
+                                    td 
+
+
+
+            div.open-news__btn-top-container.ta-center
+                button.btn-circle.btn-circle_top.open-news__btn-to-top.js-btn-top

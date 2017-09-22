@@ -1,0 +1,222 @@
+extends templates/layout
+
+block vars
+    - var title = 'Главная'
+    - var headerClass = 'main__header main__header_logo_hide header_no-border animated fadeInDown'
+    //- var sidebarClass = 'main__sidebar sidebar_bg_transparent'
+
+block content
+    div.sidebar.main__sidebar.sidebar_bg_transparent
+        a.sidebar__item.main__sidebar-item.animated.fadeInRight(href="#mobileads_page")
+            svg.sidebar__item-img
+                use.sidebar__item-img-stroke(xlink:href="#iconMobile")
+            |Мобильная<br> реклама
+        a.sidebar__item.main__sidebar-item.animated.fadeInRight(href="#communication_page")
+            svg.sidebar__item-img
+                use(xlink:href="#iconCloud")
+            |Объединенные<br> коммуникации
+        a.sidebar__item.main__sidebar-item.animated.fadeInRight(href="#video_page")
+            svg.sidebar__item-img
+                use(xlink:href="#iconPlay")
+            |Видео
+        a.sidebar__item.main__sidebar-item.animated.fadeInRight(href="#finance_page")
+            svg.sidebar__item-img
+                use(xlink:href="#iconPurse")
+            |Финансовые<br> услуги
+        a.sidebar__item.main__sidebar-item.animated.fadeInRight(href="#internet_things_page")
+            svg.sidebar__item-img.sidebar__item-img_radar
+                use(xlink:href="#iconRadar")
+            |IoT
+        div.main__sidebar-border
+    video.main__video(autoplay loop)
+        source(src="video/main_intro.mov" type="video/mp4")
+    div.content.main
+        include templates/decor-lines
+        div#fullpage
+            div.section.active
+                div.main__block.main__block_about
+                    div.container.main__block-container
+                        div.main__block-content.main__block-content_about.animated.fadeInDown
+                            a.main__about-logo-container.bottom-line.bottom-line_center(href="main.html")
+                                svg.main__about-logo
+                                    use(xlink:href="#imgLogo")
+                            p.title.title_m.main__about-title.main__about-title_wide.
+                                Наша миссия: Мы&nbsp;создаем возможности, разрабатывая новейшие цифровые сервисы и&nbsp;внедряя инновации на&nbsp;стыке телекоммуникаций с&nbsp;другими отраслями.
+                            div.main__btn-container
+                                a.btn-arrow(href="#mobileads_page")
+            div.section
+                div.main__block.main__block_mobile-ads.translucent-bg(data-bg='/images/bg/mobile-ads.jpg')
+                    div.container.main__block-container
+                        div.main__block-content.animated.fadeInDown
+                            a.main__block-link(href="mobile_ads.html")
+                                svg.main__block-icon
+                                    use(xlink:href="#iconMobile")
+                                p.title.title_xxl.main__block-title.
+                                    Мобильная<br> реклама
+                            p.text.text_l.ta-center.main__block-subtitle.
+                                Мобильная реклама&nbsp;&mdash; создание и&nbsp;развитие рекламных продуктов на&nbsp;пересечении рекламных digital- и&nbsp;telecom-технологий.
+            div.section
+                div.main__block.main__block_communication.translucent-bg(data-bg='/images/bg/communication.jpg')
+                    div.container.main__block-container
+                        div.main__block-content.animated.fadeInDown
+                            a.main__block-link(href="communications.html")
+                                svg.main__block-icon
+                                    use(xlink:href="#iconCloud")
+                                p.title.title_xxl.main__block-title.
+                                    Объединенные<br> коммуникации
+                            p.text.text_l.ta-center.main__block-subtitle.
+                                Наши облачные решения позволяют миллионам клиентов &laquo;МегаФона&raquo; получить все преимущества SaaS: полный функционал, недорогую эксплуатацию, легкое масштабирование. Мы&nbsp;не&nbsp;стоим на&nbsp;месте и&nbsp;стремимся постоянно совершенствовать свои продукты, чтобы дать вам еще больше возможностей!
+            div.section
+                div.main__block.main__block_video.translucent-bg(data-bg='/images/bg/video.jpg')
+                    div.container.main__block-container
+                        div.main__block-content.animated.fadeInDown
+                            a.main__block-link(href="video.html")
+                                svg.main__block-icon
+                                    use(xlink:href="#iconPlay")
+                                p.title.title_xxl.main__block-title.
+                                    Видео
+                            p.text.text_l.ta-center.main__block-subtitle.
+                                Команда бизнес-направления &laquo;Видео&raquo; развивает проект &laquo;МегаФон.ТВ&raquo;. Это ОТТ-сервис оператора, ориентированный на&nbsp;весь рынок и&nbsp;при этом дающий особые преимущества для абонентов &laquo;МегаФона&raquo;: бесплатные ТВ-каналы и&nbsp;фильмы на&nbsp;тарифах и&nbsp;опциях &laquo;Всё включено&raquo;.
+            div.section
+                div.main__block.main__block_finance.translucent-bg(data-bg='/images/bg/finance.jpg')
+                    div.container.main__block-container
+                        div.main__block-content.animated.fadeInDown
+                            a.main__block-link(href="finance.html")
+                                svg.main__block-icon
+                                    use.svg.svg__color_white(xlink:href="#iconPurse")
+                                p.title.title_xxl.main__block-title.
+                                    Финансовые<br> услуги
+                            p.text.text_l.ta-center.main__block-subtitle.
+                                Бизнес-направление работает на&nbsp;перекрестке финансовых услуг и&nbsp;сервисов мобильного оператора. Новые технологии в&nbsp;сфере телекоммуникаций позволяют предоставлять абонентам максимально удобные и&nbsp;быстрые финансовые продукты.
+            div.section
+                div.main__block.main__block_internet-things.translucent-bg(data-bg='/images/bg/internet-things.jpg')
+                    div.container.main__block-container
+                        div.main__block-content.animated.fadeInDown
+                            div.main__block-content
+                                a.main__block-link(href="internet_things.html")
+                                    svg.main__block-icon.main__block-icon_radar
+                                        use(xlink:href="#iconRadar")
+                                    p.title.title_xxl.main__block-title.
+                                        Интернет вещей
+                                    p.title.title_xl.internet-things__subtitle.
+                                        Internet of Things
+                                p.text.text_l.ta-center.main__block-subtitle.
+                                    Life Control&nbsp;&mdash; это продукт, объединяющий в&nbsp;себе различные сервисы и&nbsp;устройства начиная от&nbsp;удобного управления квартирой или загородным домом и&nbsp;заканчивая фитнессом.
+            div.section
+                div.main__content-block
+                    div.container.main__content-container.ta-center
+                        p.title.title_xl.main__content-title.
+                            Команда профессионалов
+                        div.main__icon-container.bottom-line.bottom-line_center
+                            svg.main__block-icon
+                                use(xlink:href="#iconUser")
+                        p.main__team-about.title.title_m.
+                            Мы&nbsp;молодая амбициозная команда. У&nbsp;нас уже есть свои поводы для гордости, и&nbsp;мы&nbsp;продолжаем активно совершенствоваться, понимая, что впереди нас ждут новые большие достижения.
+                    div.main__content-photo-block.translucent-bg
+                        div.container.ta-center
+                            p.title.title_m.main__content-photo-block-title.padding.padding_text-xl.
+                                MegaLabs предлагает интересную проектную работу с&nbsp;возможностью проявить себя в&nbsp;разных бизнес-направлениях, профессиональный рост и&nbsp;комфортные условия труда. 
+                            a.btn-round.btn-round_link(href="vacancies.html").
+                                Вакансии
+                    div.container.main__content-container.ta-center
+                        p.title.title_xl.main__content-title.
+                            Новости
+                        div.article-list.main__news
+                            //-------------------- 01
+                            div.article-list__item
+                                div.article-list__elem.article-list__elem_img.article-list__elem_img-01
+                                div.article-list__elem.article-list__elem_text
+                                    a.title.title_l.article-list__link(href="/open-news-01.html").
+                                        &laquo;МегаФон&raquo; и&nbsp;MasterCard отправляют зрителей во&nbsp;вселенную &laquo;Звёздных войн&raquo; со&nbsp;скидкой
+                                    p.text.text_light.
+                                        Сегодня в&nbsp;российском прокате стартовал фильм &laquo;Изгой-один. Звёздные войны: Истории&raquo;, а&nbsp;&laquo;МегаФон&raquo; и&nbsp;MasterCard дарят всем поклонникам &laquo;звёздной&raquo; саги скидку&nbsp;20% на&nbsp;покупку билетов.
+                                    div.article-list__arrow
+                            //-------------------- 02
+                            div.article-list__item
+                                div.article-list__elem.article-list__elem_img.article-list__elem_img-02
+                                div.article-list__elem.article-list__elem_text
+                                    a.title.title_l.article-list__link(href="/open-news-02.html").
+                                        Банковская карта &laquo;МегаФона&raquo; теперь доступна по&nbsp;всей России
+                                    p.text.text_light.
+                                        С 10 октября новая банковская карта «МегаФона» будет доступна для получения во всех городах России. Ее уникальность в том, что счет этой карты — это счет мобильного телефона.
+                                    div.article-list__arrow
+                            //-------------------- 03
+                            div.article-list__item
+                                div.article-list__elem.article-list__elem_img.article-list__elem_img-03
+                                div.article-list__elem.article-list__elem_text
+                                    a.title.title_l.article-list__link(href="/open-news-03.html").
+                                        Олимпийские чемпионки Рио-2016 стали первыми обладательницами новых карт &laquo;МегаФона&raquo;
+                                    p.text.text_light.
+                                        Сегодня «МегаФон» презентовал банковскую карту, аналогов которой нет в мире.
+                                    div.article-list__arrow
+                            //-------------------- 04
+                            div.article-list__item
+                                div.article-list__elem.article-list__elem_img.article-list__elem_img-04
+                                div.article-list__elem.article-list__elem_text
+                                    a.title.title_l.article-list__link(href="/open-news-04.html").
+                                        Число пополнений «Тройки» через терминалы «МегаФона» увеличилось на 80%
+                                    p.text.text_light.
+                                        Департамент транспорта Москвы и&nbsp;компания &laquo;МегаФон&raquo; подвели итоги первого года работы сервиса пополнения карты &laquo;Тройка&raquo; через терминалы мобильного оператора.
+                                    div.article-list__arrow
+                            //-------------------- 05
+                            div.article-list__item
+                                div.article-list__elem.article-list__elem_img.article-list__elem_img-05
+                                div.article-list__elem.article-list__elem_text
+                                    a.title.title_l.article-list__link(href="/open-news-05.html").
+                                        Московские абоненты &laquo;МегаФона&raquo; теперь могут оплатить проезд в&nbsp;транспорте с&nbsp;помощью телефона
+                                    p.text.text_light.
+                                        У&nbsp;абонентов &laquo;МегаФона&raquo; появилась возможность оплатить проезд в&nbsp;общественном транспорте города Москвы при помощи технологии NFC.
+                                    div.article-list__arrow
+                            //-------------------- 06
+                            div.article-list__item
+                                div.article-list__elem.article-list__elem_img.article-list__elem_img-ph
+                                div.article-list__elem.article-list__elem_text
+                                    a.title.title_l.article-list__link(href="/open-news-06.html").
+                                        &laquo;Ёлочный&raquo; базар на&nbsp;&laquo;МегаФон.ТВ&raquo;. Онлайн-кинотеатр покажет серии &laquo;Ёлок&raquo; бесплатно.
+                                    p.text.text_light.
+                                        Зрители онлайн-кинотеатра &laquo;МегаФон.ТВ&raquo; получили бесплатный доступ к&nbsp;просмотру первых частей народной комедии &laquo;Ёлки&raquo; с&nbsp;19&nbsp;декабря по&nbsp;8&nbsp;января 2017&nbsp;включительно.
+                                    div.article-list__arrow
+                            //-------------------- 07
+                            div.article-list__item
+                                div.article-list__elem.article-list__elem_img.article-list__elem_img-ph
+                                div.article-list__elem.article-list__elem_text
+                                    a.title.title_l.article-list__link(href="/open-news-07.html").
+                                        МегаФон.ТВ покажет фильмы 20th Century Fox (20-й Век Фокс)
+                                    p.text.text_light.
+                                        Онлайн-кинотеатр &laquo;МегаФон.ТВ&raquo; подписал соглашение о&nbsp;партнёрстве с&nbsp;американской студией 20th Century Fox (20-й Век Фокс). Теперь пользователям доступно более 100 популярных фильмов киностудии.
+                                    div.article-list__arrow
+                            //-------------------- 08
+                            div.article-list__item
+                                div.article-list__elem.article-list__elem_img.article-list__elem_img-08
+                                div.article-list__elem.article-list__elem_text
+                                    a.title.title_l.article-list__link(href="/open-news-08.html").
+                                        Две недели бесплатных сериалов на&nbsp;&laquo;МегаФон&nbsp;ТВ&raquo;
+                                    p.text.text_light.
+                                        &laquo;МегаФон&raquo; приготовил специальную акцию для любителей сериалов!
+                                    div.article-list__arrow
+                            //-------------------- 09
+                            div.article-list__item
+                                div.article-list__elem.article-list__elem_img.article-list__elem_img-09
+                                div.article-list__elem.article-list__elem_text
+                                    a.title.title_l.article-list__link(href="/open-news-09.html").
+                                        Проекты &laquo;МегаФона&raquo; отмечены премией &laquo;Время инноваций-2016&raquo;
+                                    p.text.text_light.
+                                        Наша компания стала почетным лауреатом ежегодной премии &laquo;Время инноваций&raquo;, проводимой под патронажем Минэкономразвития.
+                                    div.article-list__arrow
+                            //-------------------- 10
+                            div.article-list__item
+                                div.article-list__elem.article-list__elem_img.article-list__elem_img-10
+                                div.article-list__elem.article-list__elem_text
+                                    a.title.title_l.article-list__link(href="/open-news-10.html").
+                                        Информация для абонентов/пользователей услуги &laquo;Медиапортал MegaFon.TV&raquo;
+                                    p.text.text_light.
+                                        ОАО &laquo;МегаФон&raquo; информирует абонентов/пользователей услуги &laquo;Медиапортал MegaFon.TV&raquo; об&nbsp;изменении наименования пакетов, перечня Видеоконтента ряда Пакетов и&nbsp;размера Абонентской платы.
+                                    div.article-list__arrow
+                                
+                        button.btn-round.btn-round_outline.main__news_btn-more.
+                            Еще
+
+
+
+
+

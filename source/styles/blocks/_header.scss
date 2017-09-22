@@ -1,0 +1,82 @@
+.header {
+    transition: all 0.3s linear;
+    background-color: white;
+    border-bottom: 1px solid $header-border;
+    pointer-events: none;
+    min-width: $container-width-desktop-xl;
+    z-index: 10;
+    &_no-bg {
+        background-color: transparent;
+    }
+    &_no-border {
+        border-bottom: none;
+    }
+    &_bg_white {
+        background-color: white;
+    }
+    &_opacity {
+        background-color: $header-opacity !important;
+        border-bottom: 1px solid $header-border;
+    }
+    &_bg_transclucent-gray {
+        background-color: $header-transclucent-gray;
+    }
+    &_fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    &_color_white {
+        .header__nav-link {
+            @include link(white);
+        }
+    }
+    &__container {
+        pointer-events: none;
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: $header-nav-height-desktop-xl;
+    }
+    &__nav-item {
+        text-align: center;
+        width: calc((100% - 196px) / 6);
+        &_logo {
+            width: auto;
+        }
+    }
+    &__nav-link {
+        @include link($main-gray);
+        transition: all 0.3s linear;
+        border-bottom: 5px solid transparent;
+        display: inline-block;
+        font-size: 11px;
+        font-family: "RobotoBold";
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-decoration: none;
+        pointer-events: auto;
+        padding-bottom: 4px;
+        //opacity: 0;
+        &:hover {
+            border-color: $main-purple;
+        }
+        &_active {
+            border-color: $main-purple;
+        }
+        &_logo {
+            &:hover {
+                border-color: transparent;
+            }
+        }
+    }
+    &__logo {
+        //stroke: $logo-green;
+        fill: $logo-green;
+        height: 23px;
+        width: 196px;
+    }
+}

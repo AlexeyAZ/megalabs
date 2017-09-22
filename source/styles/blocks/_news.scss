@@ -1,0 +1,35 @@
+.news {
+    &__container {
+        padding-top: $news-padding-top-desktop-xl;
+        padding-bottom: 120px;
+    }
+    &__heading {
+        margin-bottom: 74px;
+    }
+    &__btn-more {
+        display: none;
+        margin: 80px auto 0;
+    }
+    & .article-list__item {
+
+    }
+
+    .decor-lines__block {
+        &:nth-child(1) {
+            .decor-lines__point_left {
+                display: none;
+            }
+        }
+        &:nth-child(2) {
+            .decor-lines__point_right {
+                display: none;
+            }
+        }
+        &:nth-child(4) {
+            .decor-lines__point_right {
+                display: none;
+            }
+        }
+    }
+}
+

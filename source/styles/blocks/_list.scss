@@ -1,0 +1,16 @@
+.list {
+    &_check {
+        padding-left: 15px;
+    }
+    &__item {
+        &_check {
+            background-position: left top 5px;
+            background-repeat: no-repeat;
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+        &_check-purple {
+            background-image: url("../images/icon-check-purple.svg");
+        }
+    }
+}

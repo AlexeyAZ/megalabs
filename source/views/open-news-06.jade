@@ -1,0 +1,25 @@
+extends templates/layout
+
+block vars
+    - var title = ''
+
+block content
+    div.content.open-news
+        include templates/decor-lines
+        div.container.padding_desktop-xl
+            div.open-news__btn-close-container.ta-center
+                a(href="/news.html").btn-circle.btn-circle_close.open-news__btn-close
+            p.title.title_l.open-news__heading.
+                Зрители онлайн-кинотеатра &laquo;МегаФон.ТВ&raquo; получили бесплатный доступ к&nbsp;просмотру первых частей народной комедии &laquo;Ёлки&raquo; с&nbsp;19&nbsp;декабря по&nbsp;8&nbsp;января 2017&nbsp;включительно.
+            div.open-news__article
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            На&nbsp;старте в&nbsp;российском прокате пятой части &laquo;Ёлок&raquo;, онлайн-кинотеатр &laquo;МегаФон.ТВ&raquo; предлагает вспомнить, как всё начиналось. Первые, вторые и&nbsp;третьи &laquo;Ёлки&raquo;, а&nbsp;также фильмы &laquo;Ёлки 1914&raquo; и&nbsp;&laquo;Ёлки Лохматые&raquo; доступны для бесплатного просмотра всем пользователям, зарегистрированным в&nbsp;сервисе MegaFon.TV, а&nbsp;также пользователям, зарегистрировавшимся в&nbsp;сервисе во&nbsp;время проведения акции с&nbsp;19&nbsp;декабря по&nbsp;8&nbsp;января.
+                        p.text.text_light.open-news__photo-block-text.
+                            Напомним, что первый фильм киноальманаха &laquo;Ёлки&raquo; вышел в&nbsp;2010-ом году и&nbsp;состоял из&nbsp;снятых разными режиссёрами 8&nbsp;новелл, связанных между собой и&nbsp;происходящих 31&nbsp;декабря в&nbsp;11&nbsp;российских городах. В&nbsp;основу сюжета положена теория &laquo;шести рукопожатий&raquo;, согласно которой каждый человек на&nbsp;Земле знает другого через шесть знакомых. В&nbsp;кинотеатре фильм посмотрело 4&nbsp;млн. зрителей, а&nbsp;сборы составили более 22&nbsp;млн. долларов.
+                        p.text.text_light.open-news__photo-block-text.
+                            За&nbsp;шесть лет &laquo;новогодняя история&raquo; от&nbsp;Тимура Бекмамбетова получила продолжение в&nbsp;виде второй и&nbsp;третьей части, также вышли фильмы &laquo;Ёлки 1914&raquo; и&nbsp;&laquo;Ёлки Лохматые&raquo;. Именно эти картины можно сегодня посмотреть абсолютно бесплатно в&nbsp;онлайн-кинотеатре МегаФон.ТВ.
+
+            div.open-news__btn-top-container.ta-center
+                button.btn-circle.btn-circle_top.open-news__btn-to-top.js-btn-top

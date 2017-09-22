@@ -1,0 +1,72 @@
+extends templates/layout
+
+block scripts
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru-RU" type="text/javascript")
+    script.
+        ymaps.ready(init);
+        var map;
+        var placemark;
+        var coord = [55.733107, 37.621830];
+        
+        function init(){  
+            
+            map = new ymaps.Map("map", {
+                lang: 'ru',
+                center: coord,
+                zoom: 16,
+                controls: []
+            });
+
+            placemark = new ymaps.Placemark(coord, {}, {
+                iconLayout: 'default#image',
+                iconImageHref: '/images/contacts-map-mark.svg',
+                iconImageSize: [65, 90],
+            });
+            
+            map.geoObjects.add(placemark);
+        }
+
+block vars
+    - var title = 'Контакты'
+
+block content
+    div.content.contacts
+        include templates/decor-lines
+        div.contacts__map#map
+        div.container.contacts__container.padding_desktop-xl.container-decor-dots
+            div.contacts__item
+                p.heading.heading_m.contacts__title.
+                    ВЫ МОЖЕТЕ ПОзВОНИТЬ<br>
+                    +7 499 755-00-80
+                p.heading.heading_m.bottom-line.bottom-line_left.contacts__title-bottom-line.
+                        ИЛИ <a class="js-anchor-link" href="#feedback-form">НАПИСАТЬ</a> НАМ
+            div.contacts__item
+                p.heading.heading_m.contacts__title.
+                    ОФИС В МОСКВЕ
+                p.contacts__text.
+                    2-й Казачий переулок, д.11, стр.1<br>
+                    <a class="contacts__link" href="https://yandex.ru/maps/213/moscow/?ll=37.621831%2C55.733108&z=16&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fll%3D37.621833%252C55.733111%26spn%3D0.001%252C0.001%26text%3D%25D0%25A0%25D0%25BE%25D1%2581%25D1%2581%25D0%25B8%25D1%258F%252C%2B%25D0%259C%25D0%25BE%25D1%2581%25D0%25BA%25D0%25B2%25D0%25B0%252C%2B2-%25D0%25B9%2B%25D0%259A%25D0%25B0%25D0%25B7%25D0%25B0%25D1%2587%25D0%25B8%25D0%25B9%2B%25D0%25BF%25D0%25B5%25D1%2580%25D0%25B5%25D1%2583%25D0%25BB%25D0%25BE%25D0%25BA%252C%2B11%25D1%25811" target="_blank">
+                        <svg class="contacts__icon contacts__icon_map">
+                            <use xlink:href="#iconMapMark">
+                        </svg>
+                        Показать на карте
+                    </a>
+                p.contacts__text.contacts__text_phone.
+                    Телефон: +7 499 755-00-80<br>
+                    Факс: +7 499 755-00-81
+                p.contacts__text.
+                    <a class="contacts__link" href="mailto:request@megalabs.ru">
+                        <svg class="contacts__icon contacts__icon_mail">
+                            <use xlink:href="#iconMail">
+                        </svg>
+                        request@megalabs.ru
+                    </a>
+        div.contacts__feedback-container#feedback-form
+            include templates/feedback-block
+        div.contacts__send
+            p.title.title_xl.contacts__send-title.
+                Обратная связь
+            svg.contacts__send-icon
+                use(xlink:href="#iconOk")
+            p.text.text_light.
+                Ваше сообщение отправлено.<br>Спасибо!

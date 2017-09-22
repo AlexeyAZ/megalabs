@@ -1,0 +1,23 @@
+extends templates/layout
+
+block vars
+    - var title = ''
+
+block content
+    div.content.open-news
+        include templates/decor-lines
+        div.container.padding_desktop-xl
+            div.open-news__btn-close-container.ta-center
+                a(href="/news.html").btn-circle.btn-circle_close.open-news__btn-close
+            p.title.title_l.open-news__heading.
+                Проекты &laquo;МегаФона&raquo; отмечены премией &laquo;Время инноваций-2016&raquo;
+            div.open-news__article
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            Наша компания стала почетным лауреатом ежегодной премии &laquo;Время инноваций&raquo;, проводимой под патронажем Минэкономразвития. Экспертным жюри в&nbsp;отдельных номинациях отмечены яркие клиентские проекты &laquo;МегаФона&raquo;&nbsp;&mdash; это Банковская карта и&nbsp;популярный музыкальный фестиваль MegaFonLive. Премия &laquo;Время инноваций&raquo; вручается за&nbsp;лучшие практики в&nbsp;области разработки, внедрения, стимулирования и&nbsp;продвижения инновационных проектов.
+                        p.text.text_light.open-news__photo-block-text.
+                            Лауреаты Премии &laquo;Время инноваций&raquo;&nbsp;&mdash; флагманы российской экономики, перспективно оценивающие значимость инноваций и&nbsp;определяющие инновационную деятельность как приоритетную стратегию и&nbsp;бизнес-модель.
+
+            div.open-news__btn-top-container.ta-center
+                button.btn-circle.btn-circle_top.open-news__btn-to-top.js-btn-top

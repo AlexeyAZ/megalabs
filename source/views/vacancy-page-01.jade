@@ -1,0 +1,92 @@
+extends templates/layout
+
+block vars
+	- var title = 'Вакансии'
+	- var wrapperClass = ''
+
+block content
+	div.content
+		include templates/decor-lines
+		div.vacancy-page__header.ta-center.translucent-bg
+			div.container.vacancy-page__container.container-photo-decor-dots
+				p.vacancy-page__name.title.title_xl.
+					Старший менеджер продукта «МегаФон.ТВ»
+				//- p.vacancy-page__outlines.title.
+				//- 	Москва / от 50 000 Р
+				a(href="vacancies.html").vacancy-page__return-btn.btn.btn-circle.btn-circle_close
+		div.vacancy-page__details.container.container-decor-dots
+			div.vacancy-page__details-column
+				ul.vacancy-page__details-list
+					li.vacancy-page__details-list-item
+						p.vacancy-page__details-list-headline.title.title_l.bottom-line.bottom-line_left.ta-left.
+							Обязанности
+					li.vacancy-page__details-list-item.text.text_m.
+						Анализ пользовательских проблем, потребностей, конкурирующих продуктов с&nbsp;целью формирования предложений по&nbsp;развитию продукта
+					li.vacancy-page__details-list-item.text_m.
+						Приоритизация проектов и&nbsp;задач для команды разработки в&nbsp;соответствии с&nbsp;общей продуктовой стратегией
+					li.vacancy-page__details-list-item.text_m.
+						Детальная проработка бизнес-требований к&nbsp;новому функционалу продукта
+					li.vacancy-page__details-list-item.text_m.
+						Согласование требований продукта со&nbsp;всеми заинтересованными сторонами
+					li.vacancy-page__details-list-item.text_m.
+						Подготовка документации&nbsp;и, при необходимости, прототипов для передачи команде разработки
+					li.vacancy-page__details-list-item.text_m.
+						Коммуникация с&nbsp;дизайнерами, аналитиками и&nbsp;архитектором в&nbsp;процессе реализации функционала
+					li.vacancy-page__details-list-item.text_m.
+						Приемочное тестирование
+					li.vacancy-page__details-list-item.text_m.
+						Анализ эффективности реализованного функционала и&nbsp;подготовка отчетности
+			div.vacancy-page__details-column
+				ul.vacancy-page__details-list
+					li.vacancy-page__details-list-item
+						p.vacancy-page__details-list-headline.title.title_l.bottom-line.bottom-line_left.ta-left.
+							Требования
+					li.vacancy-page__details-list-item.text.text_m.
+						Опыт работы менеджером продукта не&nbsp;менее 2&nbsp;лет. В&nbsp;сфере VOD и&nbsp;телевидения&nbsp;&mdash; как преимущество
+					li.vacancy-page__details-list-item.text_m.
+						Опыт выявления пользовательских проблем и&nbsp;запросов с&nbsp;помощью качественных и&nbsp;количественных исследований
+					li.vacancy-page__details-list-item.text_m.
+						Опыт составления требований к&nbsp;функционалу и&nbsp;интерфейсу продукта и&nbsp;написания документации
+					li.vacancy-page__details-list-item.text.text_m.
+						Опыт создания прототипов и&nbsp;карт экранов. Опыт тестирования прототипов и&nbsp;проведения UI&nbsp;/ UX&nbsp;тестирования&nbsp;&mdash; как преимущество
+					li.vacancy-page__details-list-item.text_m.
+						Навыки построения и&nbsp;отслеживания продуктовых метрик
+					li.vacancy-page__details-list-item.text_m.
+						Понимание особенностей работы и&nbsp;интерфейсов разных платформ (mobile, web, smart&nbsp;TV)
+					li.vacancy-page__details-list-item.text_m.
+						Дисциплинированность, самостоятельность, аналитический склад ума и&nbsp;коммуникабельность
+				ul.vacancy-page__details-list
+					li.vacancy-page__details-list-item
+						p.vacancy-page__details-list-headline.title.title_l.bottom-line.bottom-line_left.ta-left.
+							Условия
+					li.vacancy-page__details-list-item.text.text_m.
+						Комфортный офис в&nbsp;центре, шаговая доступность от&nbsp;м. Полянка, м. Серпуховская, м. Добрынинская, м. Октябрьская, м. Третьяковская
+					li.vacancy-page__details-list-item.text_m.
+						Оформление по ТК
+					li.vacancy-page__details-list-item.text_m.
+						Соцпакет (компенсация моб. связи, фитнес, ДМС)
+		div.vacancy-page__form-wrap
+			p.title.title_xl.vacancy-page__form-headline.
+				Откликнуться на вакансию
+			form(name="vacancy_form", enctype="multipart/form-data").vacancy-page__form
+				input(type="text", name="name", placeholder="Имя и фамилия" data-validation="required").input
+				input(type="email", name="email", placeholder="E-mail" data-validation="required email").input
+				input(type="phone", name="phone", placeholder="Телефон" data-validation-length="14" data-validation="required length").input
+				input(type="text", name="hh-link", placeholder="Ссылка на профиль hh.ru").input
+				textarea(name="letter", placeholder="Сопроводительное письмо" data-validation="required").input
+				label(for="file").vacancy-page__form-file-upload
+					p.vacancy-page__form-file-upload-text.text.text_m.
+						Загрузить резюме
+					p.vacancy-page__form-file-upload-name.text.text_m.
+						
+					input(type="file", name="file")#file.vacancy-page__form-file-input
+				div.vacancy-page__form-checkbox-wrap
+					input(type="checkbox", name="approve").vacancy-page__form-check#approve
+					label(for="approve").vacancy-page__form-check-label
+						p.vacancy-page__form-checkbox-info.text.text_xs.
+							Я даю свое согласие на передачу в ЗАО «МегаЛабс» резюме и/или анкеты, содержащих мои персональные данные, и согласен с тем, что они будут храниться в ЗАО «МегаЛабс» в течение 5 лет и будут обрабатываться исключительно для целей предложения мне вакансий группы компаний «МегаЛабс», в соответствии с Федеральным законом «О персональных данных».
+				button.vacancy-page__form-submit.btn.btn-round.
+					Отправить
+
+
+

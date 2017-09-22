@@ -1,0 +1,32 @@
+extends templates/layout
+
+block vars
+    - var title = ''
+
+block content
+    div.content.open-news
+        include templates/decor-lines
+        div.container.padding_desktop-xl
+            div.open-news__btn-close-container.ta-center
+                a(href="/news.html").btn-circle.btn-circle_close.open-news__btn-close
+            p.title.title_l.open-news__heading.
+                &laquo;МегаФон&raquo; и&nbsp;MasterCard отправляют зрителей во&nbsp;вселенную &laquo;Звёздных войн&raquo; со&nbsp;скидкой
+            div.open-news__article
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            Сегодня в&nbsp;российском прокате стартовал фильм &laquo;Изгой-один. Звёздные войны: Истории&raquo;, а&nbsp;&laquo;МегаФон&raquo; и&nbsp;MasterCard дарят всем поклонникам &laquo;звёздной&raquo; саги скидку&nbsp;20% на&nbsp;покупку билетов.
+                        p.text.text_light.open-news__photo-block-text.
+                            Фильм &laquo;Изгой-один. Звёздные войны: Истории&raquo; станет первым в&nbsp;серии картин о&nbsp;различных героях и&nbsp;событиях вселенной &laquo;Звёздных войн&raquo;, не&nbsp;связанных напрямую с&nbsp;действием легендарной космической саги. В&nbsp;роли режиссера фильма &laquo;Изгой-один. Звёздные войны: Истории&raquo; выступает Гарет Эдвардс, известный по&nbsp;картинам &laquo;Монстры&raquo; и&nbsp;&laquo;Годзилла&raquo;. Картина расскажет историю бойцов сопротивления, объединившихся для похищения чертежей имперской космической станции &laquo;Звезда смерти&raquo;. От&nbsp;успеха этой миссии зависит не&nbsp;только исход решающей битвы, но&nbsp;и&nbsp;судьба всей галактики.
+                p.text.text_xl.open-news__article.bottom-line.bottom-line_center.
+                    &laquo;Самая популярная операция по&nbsp;банковской карте &laquo;МегаФон&raquo;&nbsp;&mdash; это оплата товаров и&nbsp;услуг, в&nbsp;том числе и&nbsp;покупка кинобилетов. В&nbsp;течение месяца всем зрителям, которые любят посещать кинотеатры всей семьей, мы&nbsp;даем возможность сэкономить на&nbsp;покупке билетов и&nbsp;посмотреть не&nbsp;только &laquo;Изгой-один. Звёздные войны: Истории&raquo;, но&nbsp;и&nbsp;все фильмы, что идут в&nbsp;прокате в&nbsp;декабре и&nbsp;январе&raquo;
+                p.text.text_light.open-news__article-author.
+                    Кухальский&nbsp;Ян, <br>директор по&nbsp;новым бизнесам и&nbsp;партнерствам компании &laquo;МегаФон&raquo;.
+                div.open-news__photo-block.open-news__photo-block_left
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            Фильм выходит в&nbsp;форматах 2D, 3D&nbsp;и&nbsp;IMAX 3D. Каждый формат отличается не&nbsp;только технологией трансляции изображения, но&nbsp;и&nbsp;стоимостью билетов. Но&nbsp;с&nbsp;15&nbsp;декабря по&nbsp;15&nbsp;января 2017 года обладатели банковской карты &laquo;МегаФон&raquo; платежной системы MasterCard при покупке билетов на&nbsp;фильм &laquo;Изгой-один. Звёздные войны: Истории&raquo; через мобильное приложение &laquo;Киноход&raquo; или на&nbsp;сайте kinohod.ru получают&nbsp;20% скидку.
+                        p.text.text_light.open-news__photo-block-text.
+                            20% скидка при покупке билетов на&nbsp;сайте и&nbsp;в&nbsp;приложении &laquo;Киноход&raquo; обладателям банковской карты &laquo;МегаФон&raquo; платежной системы MasterCard распространяется на&nbsp;все фильмы с&nbsp;15&nbsp;декабря по&nbsp;15&nbsp;января 2017&nbsp;года.
+            div.open-news__btn-top-container.ta-center
+                button.btn-circle.btn-circle_top.open-news__btn-to-top.js-btn-top

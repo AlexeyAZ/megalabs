@@ -1,0 +1,34 @@
+doctype html
+
+- var title = 'Project title'
+- var wrapperClass = ''
+- var headerClass = ''
+
+block vars
+    
+html
+    head
+        meta(charset="utf-8")
+        meta(name="description", content="")
+        //meta(name="viewport", content="width=device-width, initial-scale=1, minimal-ui")
+        meta(name="viewport")
+        meta(property="og:image", content="https://3.downloader.disk.yandex.ru/disk/bcb21defd15ffe427157bf8cff1f09ffeac5b96c7166afb9feb9a16cb3384c98/58628c5f/AKkInM6Z4Hd7EvlFhknjxyyRqClcNiOD5SjtfnVJMG5KzXdX1QA3hAUxctTC0XyjAjM_zUTVvhSML5Nb37IYgg%3D%3D?uid=0&filename=968x504.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&fsize=162942&hid=1bac410075f7c43fb665c2e7c8b5d75a&media_type=image&tknv=v2&etag=75680d0801910bf29260d370e7db68a7")
+        meta(property="og:image:type", content="image/png")
+        meta(property="og:image:width", content="968")
+        meta(property="og:image:height", content="504")
+        title #{title}
+        link(href="images/favicon.ico" rel="shortcut icon" type="image/x-icon")
+        link(href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet")
+        link(rel="stylesheet", href="styles/vendor.css")
+        link(rel="stylesheet", href="styles/main.css")
+        block scripts
+    body
+        include svg
+        include header
+        div.wrapper(class="#{wrapperClass}")
+            block content
+            include footer
+        script.formURL.
+            var submitURL = "json/submit.json"
+        script(src="scripts/vendor.js")
+        script(src="scripts/main.js")

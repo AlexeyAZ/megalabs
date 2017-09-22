@@ -1,0 +1,102 @@
+extends templates/layout
+
+block vars
+	- var title = 'Коммуникации'
+	- var wrapperClass = 'wrapper_top_100'
+	- var sidebarClass = 'sidebar_sub'
+	- var headerClass = 'header_load header_no-bg header_color_white'
+
+block content
+	div.fixed-block.communications__fixed-block
+		div.container.fixed-block__container
+			div.icon.icon_cloud
+			p.title.title_xxl.
+				Объединенные <br>коммуникации
+			a.btn-arrow.js-anchor-link(href="#communications")
+	div.content.communications#communications
+		include templates/decor-lines
+		include templates/sidebar
+		div.content-block.container.communications__container.container-decor-dots
+			p.text.text_l.communications__intro-paragraph.
+				Сегодня все больше пользователей переходят на&nbsp;облачную модель потребления таких традиционных сервисов, как телефония и&nbsp;видеоконференции, хранение данных, офисные приложения. Наши облачные решения позволяют миллионам клиентов &laquo;МегаФона&raquo; получить все преимущества SaaS: полный функционал, недорогую эксплуатацию, легкое масштабирование. Мы&nbsp;не&nbsp;стоим на&nbsp;месте и&nbsp;стремимся постоянно совершенствовать свои продукты, чтобы дать вам еще больше возможностей!
+			div.communications__items-wrap
+				div.communications__items-column
+					div.communications__item.communications__item_megadisk
+						p.communications__item-name.title.title_l.bottom-line.bottom-line_left.
+							МегаДиск
+						p.communications__item-about.text.text_m.
+							Онлайн-сервис облачного хранения данных от&nbsp;компании &quot;МегаФон. Это удобное место для хранения файлов, создания резервных копий документов и&nbsp;обмена ими с&nbsp;другими пользователями. Все файлы&nbsp;&mdash; всегда под рукой: доступ в&nbsp;МегаДиск открыт с&nbsp;любого устройства, подключённого к&nbsp;Интернету.
+						a.communications__item-link.btn.btn-round.btn-round_arrow.text.text_m.
+							Всё о продукте
+					div.communications__item.communications__item_emotion
+						p.communications__item-name.title.title_l.bottom-line.bottom-line_left.
+							eMotion
+						p.communications__item-about.text.text_m.
+							Онлайн-сервис, дающий пользователям возможность совершать и&nbsp;принимать вызовы и&nbsp;сообщения через интернет с&nbsp;использованием номера &laquo;МегаФон&raquo;.
+						a(href="request@megalabs.ru").communications__item-contacts.
+							request@megalabs.ru
+						a.communications__item-link.btn.btn-round.btn-round_arrow.text.text_m.
+							Всё о продукте
+					div.communications__item.communications__item_conference
+						p.communications__item-name.title.title_l.bottom-line.bottom-line_left.
+							Онлайн-конференции
+						p.communications__item-about.text.text_m.
+							Облачное решение, которое позволяет проводить видеоконференции, презентации или совещания в&nbsp;HD-качестве. В&nbsp;рамках данного сервиса &laquo;МегаФон&raquo; предоставляет 2&nbsp;услуги: &laquo;Видеоконференция&raquo; и&nbsp;&laquo;Вебинар&raquo;.
+						p.communications__item-about.text.text_m
+							span.text-bold.
+								«Видеоконференция» 
+							| – Услуга для удобного общения в&nbsp;режиме реального времени с&nbsp;коллегами, партнерами и&nbsp;клиентами. Она не&nbsp;требует приобретения программного обеспечения и&nbsp;дополнительного оборудования.
+						p.communications__item-about.text.text_m
+							span.text-bold.
+								«Вебинар» 
+							| – Услуга для клиентов &laquo;МегаФона&raquo;, которая позволяет вам проводить презентации, совещания или обучение в&nbsp;HD-качестве прямо на&nbsp;вашем компьютере. Удобное общение в&nbsp;режиме реального времени с&nbsp;коллегами, партнерами и&nbsp;клиентами теперь не&nbsp;требует установки специального программного обеспечения и&nbsp;приобретения дополнительного оборудования.
+						a.communications__item-link.btn.btn-round.btn-round_arrow.text.text_m.
+							Всё о продукте
+				div.communications__items-column
+					div.communications__item.communications__item_control
+						p.communications__item-name.title.title_l.bottom-line.bottom-line_left.
+							Контроль кадров 
+						p.communications__item-about.text.text_m.
+							Онлайн-сервис, позволяющий определить местоположение сотрудников корпоративных клиентов, чтобы удаленно координировать их&nbsp;передвижения. С&nbsp;помощью этого сервиса клиент сможет контролировать эффективность использования сотрудниками рабочего времени и&nbsp;точность их&nbsp;маршрутов.
+						a.communications__item-link.btn.btn-round.btn-round_arrow.text.text_m.
+							Всё о продукте
+					div.communications__item.communications__item_multiphone
+						p.communications__item-name.title.title_l.bottom-line.bottom-line_left.
+							МультиФон Бизнес 
+						p.communications__item-about.text.text_m.
+							Это экономичное и&nbsp;быстрое в&nbsp;реализации решение для офисной телефонии, которое основано на&nbsp;ИТ-платформе и&nbsp;позволяет принимать и&nbsp;совершать звонки, обмениваться данными через интернет. С&nbsp;&laquo;МультиФон Бизнес&raquo; вы&nbsp;сможете совершать до&nbsp;60&nbsp;исходящих вызовов одновременно по&nbsp;выгодным тарифам. Входящие звонки не&nbsp;тарифицируются.
+						a(href="request@megalabs.ru").communications__item-contacts.
+							request@megalabs.ru
+						a.communications__item-link.btn.btn-round.btn-round_arrow.text.text_m.
+							Всё о продукте
+					div.communications__item.communications__item_ats
+						p.communications__item-name.title.title_l.bottom-line.bottom-line_left.
+							Виртуальная АТС
+						p.communications__item-about.text.text_m.
+							Онлайн-сервис по&nbsp;телефонизации вашего бизнеса. Доступ из&nbsp;любой точки мира, многоканальный номер, прием звонков в&nbsp;SIP и&nbsp;GSM. Интеграция с&nbsp;популярными CRM системами, открытый API и&nbsp;многое другое. 8-800&nbsp;&mdash; бесплатный номер для ваших клиентов. Звонок на&nbsp;8-800 бесплатен из&nbsp;любой точки России
+						a.communications__item-link.btn.btn-round.btn-round_arrow.text.text_m.
+							Всё о продукте
+					div.communications__item.communications__item_price
+						p.communications__item-name.title.title_l.bottom-line.bottom-line_left.
+							8-800
+						p.communications__item-about.text.text_m.
+							Бесплатный номер для ваших клиентов. <br> Звонок на 8-800 бесплатен из любой точки России
+			div.communications__feedback-info.title.title_l Для коммерческих предложений воспользуйтесь
+				a.link.js-anchor-link(href=".feedback-block").
+					 формой 
+				| или напишите на 
+				a.link(href="cloud@megalabs.ru").
+					cloud@megalabs.ru
+			div.communications__vacancies
+				p.title.title_xl.communications__vacancies-headline.
+					Вакансии направления
+				div.communications__vacancies-wrap
+					a(href="vacancy-page-02.html", data-filter="financial").vacancy
+						p.title.title_l.vacancy__position.
+							Менеджер продукта «Сервисы IP коммуникации»
+						p.text.text_l.vacancy__salary.
+						p.text.text_m.vacancy__city.
+							г. Москва
+		include templates/feedback-block
+
+

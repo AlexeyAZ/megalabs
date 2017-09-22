@@ -1,0 +1,24 @@
+.photo-block {
+    &__item {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__elem {
+        min-height: $photo-block-height-desktop-xl;
+        width: 50%;
+        &_img {
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &_text {
+            padding: 30px;
+        }
+    }
+    &__title {
+        margin-bottom: 20px;
+    }
+    &__paragraph {
+        margin-bottom: 25px;
+    }
+}

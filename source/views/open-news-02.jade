@@ -1,0 +1,86 @@
+extends templates/layout
+
+block vars
+    - var title = ''
+
+block content
+    div.content.open-news
+        include templates/decor-lines
+        div.container.padding_desktop-xl
+            div.open-news__btn-close-container.ta-center
+                a(href="/news.html").btn-circle.btn-circle_close.open-news__btn-close
+            p.title.title_l.open-news__heading.
+                Банковская карта &laquo;МегаФона&raquo; теперь доступна по&nbsp;всей России
+            div.open-news__article
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            С&nbsp;10&nbsp;октября новая банковская карта &laquo;МегаФона&raquo; будет доступна для получения во&nbsp;всех городах России. Ее&nbsp;уникальность в&nbsp;том, что счет этой карты&nbsp;&mdash; это счет мобильного телефона. С&nbsp;августа оформить карту могли только жители Москвы и&nbsp;области, Санкт-Петербурга, Ярославля, Твери, Калининграда, Мурманска, Архангельска и&nbsp;Вологды, а&nbsp;теперь ее&nbsp;можно получить в&nbsp;каждом городе России в&nbsp;любом из&nbsp;2000 салонов &laquo;МегаФона&raquo;.
+                        p.text.text_light.open-news__photo-block-text.
+                            С&nbsp;помощью этой карты абоненты &laquo;МегаФона&raquo; могут расплачиваться везде, где принимают карты платежной системы MasterCard. Средства при оплате будут списываться с&nbsp;баланса телефона.
+                        p.text.text_light.open-news__photo-block-text.
+                            За месяц, прошедший с момента запуска проекта, было выдано около 42 000 карт и совершено почти 100 000 транзакций. Самая популярная операция по карте — оплата товаров и услуг.
+                p.text.text_xl.open-news__article.bottom-line.bottom-line_center.
+                    &laquo;Наши карты начинают набирать популярность у&nbsp;абонентов &laquo;МегаФона&raquo;. Практически каждый клиент, один раз расплатившийся картой, совершает затем повторную операцию. За&nbsp;первый месяц работы проекта оборот по&nbsp;картам достиг 200&nbsp;000&nbsp;000&nbsp;₽. Это хорошие показатели, они говорят о&nbsp;том, что у&nbsp;абонентов постепенно формируется привычка оплачивать с&nbsp;мобильного счета свои ежедневные покупки: продукты, бензин, лекарства, обеды и&nbsp;многое другое&raquo;
+                p.text.text_light.open-news__article-author.
+                    Кухальский&nbsp;Ян, <br>директор по&nbsp;новым бизнесам и&nbsp;партнерствам компании &laquo;МегаФон&raquo;.
+                div.open-news__photo-block.open-news__photo-block_left
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            С&nbsp;10&nbsp;октября стартует федеральная рекламная кампания в&nbsp;поддержку запуска карты по&nbsp;всей России с&nbsp;участием известной российской актрисы театра и&nbsp;кино Елизаветы Боярской.
+                        p.text.text_light.open-news__photo-block-text
+                            p.text.text_light.text_m.
+                                Ключевые преимущества карты:
+                            ul.open-news__list
+                                li 
+                                    p.open-news__list-item-name.list.list__item.list__item_check.list__item_check-purple.
+                                        Простота получения и пополнения
+                                    p.open-news__list-paragraph.text.text_light.
+                                        Каждый абонент &laquo;МегаФона&raquo; может оформить ее&nbsp;в&nbsp;любом салоне оператора за&nbsp;5&nbsp;минут при предъявлении паспорта. На&nbsp;один счет можно получить до&nbsp;десяти карт для всей семьи.
+                                li 
+                                    p.open-news__list-item-name.list.list__item.list__item_check.list__item_check-purple.
+                                        Безопасность
+                                    p.open-news__list-paragraph.text.text_light.
+                                        Карты &laquo;МегаФона&raquo; отвечают всем требованиям безопасности международной платежной системы MasterCard. Дополнительно к&nbsp;этому &laquo;МегаФон&raquo; подключает всем пользователям карты бесплатную услугу, которая блокирует неосознанные подписки. Таким образом, владельцы карт гарантированно защищены от&nbsp;нежелательных списаний с&nbsp;мобильного счета.
+                                li 
+                                    p.open-news__list-item-name.list.list__item.list__item_check.list__item_check-purple.
+                                        Переводы по России без комиссии
+                                    p.open-news__list-paragraph.text.text_light.
+                                        Для перевода другому абоненту &laquo;МегаФона&raquo; нужно просто пополнить его мобильный счет любым привычным способом (через терминал, банкомат, онлайн-банк, в&nbsp;офисе и&nbsp;так далее), и&nbsp;деньги моментально и&nbsp;без комиссии окажутся на&nbsp;его карте. При этом абсолютно неважно, в&nbsp;какой точке России или мира он&nbsp;находится.
+                                li 
+                                    p.open-news__list-item-name.list.list__item.list__item_check.list__item_check-purple.
+                                        8% годовых на остаток
+                                    p.open-news__list-paragraph.text.text_light.
+                                        Благодаря карте &laquo;МегаФона&raquo; средства на&nbsp;мобильном счете впервые будут приносить доход абонентам. Ежемесячно на&nbsp;остаток на&nbsp;счете будут начисляться деньги из&nbsp;расчета&nbsp;8% годовых.
+                                li 
+                                    p.open-news__list-item-name.list.list__item.list__item_check.list__item_check-purple.
+                                        Вознаграждение (cashback) у партнеров до 10%
+                                    p.open-news__list-paragraph.text.text_light.
+                                        Оплачивая картой товары и&nbsp;услуги, можно получать обратно на&nbsp;счет до&nbsp;10% от&nbsp;суммы покупки у&nbsp;партнеров проекта (в&nbsp;сети кофеен &laquo;Шоколадница&raquo;, в&nbsp;ресторанах &laquo;Ваби Саби&raquo;, в&nbsp;сети магазинов &laquo;Экспедиция&raquo;, в&nbsp;&laquo;Травелате&raquo; и&nbsp;у&nbsp;других партнеров).
+                                    p.open-news__list-paragraph.text.text_light.
+                                        Для удобства пользователей создано бесплатное мобильное приложение &laquo;МегаФон.Банк&raquo;, доступное для всех операционных систем Android и&nbsp;iOS, а&nbsp;еще&nbsp;&mdash; сайт #[a(href="http://bank.megafon.ru") bank.megafon.ru]. В&nbsp;приложении можно отслеживать все траты и&nbsp;начисления, совершать переводы, оплачивать товары, услуги и&nbsp;многое другое.
+                                li 
+                                    p.open-news__list-item-name.list.list__item.list__item_check.list__item_check-purple.
+                                        Обслуживание карты — 0 ₽
+                p.text.text_xl.open-news__article.bottom-line.bottom-line_center.
+                    &laquo;Я&nbsp;уже несколько лет абонент &bdquo;МегаФона&ldquo; и&nbsp;вот недавно получила банковскую карту. На&nbsp;мой взгляд, это очень удобно, особенно для покупок в&nbsp;интернете, когда не&nbsp;хочешь &bdquo;светить&ldquo; свою основную карту. Можно свободно оплачивать любые покупки. Например, авиабилеты, заказы в&nbsp;интернет-магазинах и&nbsp;многое другое&raquo;
+                p.text.text_light.open-news__article-author.
+                    Боярская Елизавета 
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text
+                            p.text.open-news__photo-block-text.
+                                Как пополнить:
+                            p.text.text_light.open-news__photo-block-text.
+                                Для пополнения счета карты нужно просто пополнить счет мобильного телефона любым привычным способом: через терминалы, автоплатежом, через онлайн-банк, в&nbsp;офисе &laquo;МегаФона&raquo;.
+                            p.text.open-news__photo-block-text.
+                                Как пользоваться:
+                            p.text.text_light.open-news__photo-block-text.
+                                Картой &laquo;МегаФона&raquo; можно расплачиваться как обычной банковской картой в&nbsp;ресторанах, магазинах, кинотеатрах и&nbsp;в&nbsp;любых других местах, а&nbsp;также при покупках в&nbsp;интернет-магазинах.
+                            a(href="https://www.youtube.com/watch?v=jG2WoqCrrhI&feature=youtu.be", target="_blank").btn-round.btn-round_link.btn-round_arrow.btn-round_xs.open-news__link-btn.
+                                Смотреть видео
+
+                        div.open-news__photo-block-item.open-news__photo-block-item_img
+                            div.open-news__photo-block-img.open-news__photo-block-img_boyarskaya
+
+            div.open-news__btn-top-container.ta-center
+                button.btn-circle.btn-circle_top.open-news__btn-to-top.js-btn-top

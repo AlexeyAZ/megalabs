@@ -1,0 +1,108 @@
+extends templates/layout
+
+block vars
+	- var title = 'Вакансии'
+	- var wrapperClass = ''
+
+block content
+	div.content
+		include templates/decor-lines
+		div.vacancy-page__header.ta-center.translucent-bg
+			div.vacancy-page__container.container-photo-decor-dots
+				p.vacancy-page__name.title.title_xl.
+					Менеджер продукта «Сервисы IP коммуникации»
+				//- p.vacancy-page__outlines.title.
+				//- 	Москва / от 50 000 Р
+				a(href="vacancies.html").vacancy-page__return-btn.btn.btn-circle.btn-circle_close
+		div.vacancy-page__details.container.container-decor-dots
+			div.vacancy-page__details-column
+				ul.vacancy-page__details-list
+					li.vacancy-page__details-list-item
+						p.vacancy-page__details-list-headline.title.title_l.bottom-line.bottom-line_left.ta-left.
+							Обязанности
+					li.vacancy-page__details-list-item.text.text_m.
+						Разработка и&nbsp;защита продуктового плана по&nbsp;развитию продукта (мобильное приложение и&nbsp;web-сервис) и&nbsp;новой функциональности
+					li.vacancy-page__details-list-item.text_m.
+						Подготовка и&nbsp;защита бизнес-кейсов, презентаций, коммерческих предложений, технических заданий, use-кейсов
+					li.vacancy-page__details-list-item.text_m.
+						Мониторинг аналитики и&nbsp;периодическая отчетность по&nbsp;статусу продукта
+					li.vacancy-page__details-list-item.text_m.
+						Организация и&nbsp;участие во&nbsp;встречах с&nbsp;партнерами и&nbsp;поставщиками решений, в&nbsp;том числе зарубежными
+					li.vacancy-page__details-list-item.text_m.
+						Участие в&nbsp;разработке инициатив по&nbsp;продвижению продукта, привлечению и&nbsp;удержанию пользователей
+					li.vacancy-page__details-list-item.text_m.
+						Разработка гипотез и&nbsp;организация их&nbsp;проверки, применение различных методик тестирования;
+					li.vacancy-page__details-list-item.text_m.
+						Систематизация функционала проекта и&nbsp;определение приоритетов совместно с&nbsp;руководителем
+					li.vacancy-page__details-list-item.text_m.
+						Контроль качества и&nbsp;сроков выполнения задач по&nbsp;продуктовому плану
+					li.vacancy-page__details-list-item.text_m.
+						Анализ потребностей аудитории, продуктов конкурентов и&nbsp;лидеров рынка, как на&nbsp;российском, так и&nbsp;на&nbsp;международных рынках
+					li.vacancy-page__details-list-item.text_m.
+						Проведение юзабилити-тестирований
+					li.vacancy-page__details-list-item.text_m.
+						Знание основ дизайна, живой интерес к&nbsp;совершенствованию UI/UX продукта
+					li.vacancy-page__details-list-item.text_m.
+						Взаимодействие с&nbsp;аналитиками, дизайнерами, разработчиками, инженерами, архитекторами, группой тестирования
+					li.vacancy-page__details-list-item.text_m.
+						Организация и&nbsp;лидерство в&nbsp;рабочих группах по&nbsp;внедрению новой функциональности продукта
+					li.vacancy-page__details-list-item.text_m.
+						Коммуникации top-down и bottom-up
+			div.vacancy-page__details-column
+				ul.vacancy-page__details-list
+					li.vacancy-page__details-list-item
+						p.vacancy-page__details-list-headline.title.title_l.bottom-line.bottom-line_left.ta-left.
+							Требования
+					li.vacancy-page__details-list-item.text.text_m.
+						Опыт работы с&nbsp;мобильными и&nbsp;web-проектами не&nbsp;менее трех лет на&nbsp;должности менеджера проекта&nbsp;/ продукта
+					li.vacancy-page__details-list-item.text_m.
+						Опыт реализации продукта полного цикла
+					li.vacancy-page__details-list-item.text_m.
+						Понимание трендов развития телеком-услуг, мобильного интернета, приложений
+					li.vacancy-page__details-list-item.text_m.
+						Понимание клиент-серверной архитектуры (DB, back-end&nbsp;/ front-end, sockets, API и&nbsp;т.д.)
+					li.vacancy-page__details-list-item.text_m.
+						Знание базовых принципов организации GSM-сетей и&nbsp;передачи голоса и&nbsp;сообщений поверх&nbsp;IP (желательно)
+					li.vacancy-page__details-list-item.text_m.
+						Умение использовать навыки управления проектами посредством Agile, Scrum, JIRA
+					li.vacancy-page__details-list-item.text_m.
+						Продвинутый пользователь MS&nbsp;Excel, PowerPoint или аналогичных приложений
+					li.vacancy-page__details-list-item.text_m.
+						Аналитический склад ума и&nbsp;пристальное внимание к&nbsp;деталям
+					li.vacancy-page__details-list-item.text_m.
+						Желательно знание английского языка
+				ul.vacancy-page__details-list
+					li.vacancy-page__details-list-item
+						p.vacancy-page__details-list-headline.title.title_l.bottom-line.bottom-line_left.ta-left.
+							Условия
+					li.vacancy-page__details-list-item.text.text_m.
+						Комфортный офис в&nbsp;центре, шаговая доступность от&nbsp;м. Полянка, м. Серпуховская, м. Добрынинская, м. Октябрьская, м. Третьяковская
+					li.vacancy-page__details-list-item.text_m.
+						Оформление по ТК
+					li.vacancy-page__details-list-item.text_m.
+						Соцпакет (компенсация моб. связи, фитнес, ДМС)
+		div.vacancy-page__form-wrap
+			p.title.title_xl.vacancy-page__form-headline.
+				Откликнуться на вакансию
+			form(name="vacancy_form",  enctype="multipart/form-data").vacancy-page__form
+				input(type="text", name="name", placeholder="Имя и фамилия" data-validation="required").input
+				input(type="email", name="email", placeholder="E-mail" data-validation="required email").input
+				input(type="phone", name="phone", placeholder="Телефон" data-validation-length="14" data-validation="required length").input
+				input(type="text", name="hh-link", placeholder="Ссылка на профиль hh.ru").input
+				textarea(name="letter", placeholder="Сопроводительное письмо" data-validation="required").input
+				label(for="file").vacancy-page__form-file-upload
+					p.vacancy-page__form-file-upload-text.text.text_m.
+						Загрузить резюме
+					p.vacancy-page__form-file-upload-name.text.text_m.
+						
+					input(type="file", name="file")#file.vacancy-page__form-file-input
+				div.vacancy-page__form-checkbox-wrap
+					input(type="checkbox", name="approve").vacancy-page__form-check#approve
+					label(for="approve").vacancy-page__form-check-label
+						p.vacancy-page__form-checkbox-info.text.text_xs.
+							Я даю свое согласие на передачу в ЗАО «МегаЛабс» резюме и/или анкеты, содержащих мои персональные данные, и согласен с тем, что они будут храниться в ЗАО «МегаЛабс» в течение 5 лет и будут обрабатываться исключительно для целей предложения мне вакансий группы компаний «МегаЛабс», в соответствии с Федеральным законом «О персональных данных».
+				button.vacancy-page__form-submit.btn.btn-round.
+					Отправить
+
+
+

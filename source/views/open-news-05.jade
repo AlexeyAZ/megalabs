@@ -1,0 +1,26 @@
+extends templates/layout
+
+block vars
+    - var title = ''
+
+block content
+    div.content.open-news
+        include templates/decor-lines
+        div.container.padding_desktop-xl
+            div.open-news__btn-close-container.ta-center
+                a(href="/news.html").btn-circle.btn-circle_close.open-news__btn-close
+            p.title.title_l.open-news__heading.
+                Московские абоненты &laquo;МегаФона&raquo; теперь могут оплатить проезд в&nbsp;транспорте с&nbsp;помощью телефона.
+            div.open-news__article
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text-wide
+                        p.text.text_light.open-news__photo-block-text.
+                            У&nbsp;абонентов &laquo;МегаФона&raquo; появилась возможность оплатить с&nbsp;мобильных телефонов проезд в&nbsp;общественном транспорте города Москвы при помощи технологии NFC. Проект реализован Департаментом транспорта, Московским метрополитеном и&nbsp;компанией &laquo;МегаЛабс&raquo;, дочерней компанией &laquo;МегаФона&raquo;.
+                        p.text.text_light.open-news__photo-block-text.
+                            Сервис &laquo;Мобильный билет&raquo; позволяет оплачивать проезд с&nbsp;мобильного счета, пассажиру достаточно просто поднести телефон к&nbsp;турникету в&nbsp;транспорте. Таким образом, абонентам &laquo;МегаФона&raquo; больше не&nbsp;нужно стоять в&nbsp;очередях в&nbsp;кассы или покупать проездные&nbsp;&mdash; карта &laquo;Тройка&raquo; теперь встроена прямо в&nbsp;SIM-карту мобильного телефона.
+                p.text.text_xl.open-news__article.bottom-line.bottom-line_center.
+                    &laquo;Проект &laquo;Мобильный билет&raquo;&nbsp;&mdash; это еще один шаг в&nbsp;реализации стратегии &laquo;МегаФона&raquo; по&nbsp;развитию мобильной коммерции. Мы&nbsp;стремимся к&nbsp;тому, чтобы лицевой счет абонента стал для него полноценным финансовым инструментом, который он&nbsp;может использовать для ежедневных расходов. Мы&nbsp;видим потенциал в&nbsp;новом сервисе, во-первых, потому что сейчас быстро растет популярность мобильных платежей: в&nbsp;первом полугодии 2015 года число платежей увеличилось на&nbsp;60% по&nbsp;сравнению с&nbsp;аналогичным периодом 2014&nbsp;года, а&nbsp;выручка от&nbsp;мобильных финансовых сервисов выросла на&nbsp;30%. Во-вторых, мы&nbsp;наблюдаем рост числа устройств с&nbsp;NFC в&nbsp;нашей сети: за&nbsp;последний год их&nbsp;количество увеличилось практически в&nbsp;2&nbsp;раза, как в&nbsp;Москве, так и&nbsp;по&nbsp;всей России&raquo;.
+                p.text.text_light.open-news__article-author.
+                     Карапетян Айк, <br>директор по&nbsp;финансовым услугам компании &laquo;МегаЛабс&raquo;.
+            div.open-news__btn-top-container.ta-center
+                button.btn-circle.btn-circle_top.open-news__btn-to-top.js-btn-top

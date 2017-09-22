@@ -1,0 +1,163 @@
+.open-news {
+    padding-top: $header-nav-height-desktop-xl;
+
+    & > .container {
+        padding-bottom: 120px;
+    }
+
+    &__heading {
+        text-align: left;
+        margin-bottom: 60px;
+    }
+    &__btn-close-container {
+        margin-bottom: 70px;
+    }
+    &__photo-block {
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+        margin-bottom: 90px;
+        &:after {
+            bottom: -50px; 
+        }
+        &_left {
+            .open-news__photo-block-item_text {
+                padding-left: $open-news-photo-block-text-padding-desktop-xl;
+                padding-right: 0;
+                order: 2;
+            }
+            .open-news__photo-block-item_img {
+                order: 1;
+                .open-news__photo-block-img {
+                    right: 0;
+                    left: auto;
+                }
+            }
+        }
+    }
+
+    &__photo-block + .open-news__photo-block {
+        margin-top: 130px;
+    }
+    &__photo-block-item {
+        position: relative;
+        &_img {
+            height: $open-news-photo-block-height-desktop-xl;
+            width: 42%;
+        }
+        &_text {
+            padding-right: $open-news-photo-block-text-padding-desktop-xl;
+            width: 58%;
+        }
+        &_text-wide {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+    &__photo-block-text {
+        margin-bottom: 20px;
+
+        &_increased-margintop {
+            margin-top: 60px;
+        }
+    }
+    &__photo-block-title {
+        margin-bottom: 10px;
+    }
+    &__photo-block-img {
+        background-image: url("../images/open-news/img1.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: calc(100% + 120px);
+
+        &_boyarskaya {
+            background-image: url("../images/open-news/News2_inner.jpg");
+        }
+        &_0301 {
+            background-image: url("../images/open-news/News3_inner01.jpg");
+        }
+        &_0302 {
+            background-image: url("../images/open-news/News3_inner02.jpg");
+        }
+        &_ph {
+            background-image: url("http://placehold.it/548x330");
+        }
+    }
+
+    &__article {
+        
+        &::after {
+            top: -22px;
+        }
+    }
+
+    &__list-item-name {
+        position: relative;
+        margin-top: 35px;
+        margin-bottom: 0;
+        padding-left: 30px;
+        background-position: left top 3px;
+    }
+
+    &__list-paragraph {
+        margin-top: 10px;
+    }
+
+    &__article-author {
+        text-align: right;
+        margin-top: 15px;
+        margin-bottom: 90px;
+        padding-left: 500px;
+        font-style: italic;
+    }
+
+    &__link-btn {
+        display: inline-block;
+        text-align: center;
+        margin-top: 23px;
+        padding-left: 22px;
+    }
+
+    &__table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+        background-color: #fff;
+        
+        
+        & th {
+            height: 50px;
+            vertical-align: middle;
+            color: #fff;
+            background-color: $logo-green;
+            border: 1px solid $logo-green;
+        }
+
+        & td {
+            height: 35px;
+            vertical-align: middle;
+            text-align: center;
+            padding: 0 10px;
+            color: $main-gray;
+            border: 1px solid #ccc;
+            
+            &:first-child {
+                text-align: left;
+            }
+        }
+    }
+
+    &__btn-to-top {
+        margin-top: 15px;
+    }
+    &__btn-close {
+        display: inline-block;
+    }
+}
+

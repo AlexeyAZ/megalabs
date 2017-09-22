@@ -1,0 +1,110 @@
+.contacts {
+    &__map {
+        position: relative;
+        margin-top: $header-nav-height-desktop-xl;
+        height: $contacts-map-height-desktop-xl;
+        z-index: 4;
+    }
+    &__container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+    &__item {
+        width: 50%;
+    }
+    &__title {
+        margin-bottom: 30px;
+    }
+    &__title-bottom-line {
+        &:after {
+            bottom: -55px;
+        }
+    }
+    &__text {
+        line-height: 1.5;
+        margin-bottom: 20px;
+        &_phone {
+            text-align: justify;
+        }
+    }
+    &__link {
+        background-position: left center;
+        background-repeat: no-repeat;
+        position: relative;
+        //padding-left: 20px;
+        &_map {
+            background-image: url("../images/icon-map-mark-green.svg");
+            background-size: 11px;
+        }
+        &_mail {
+            background-image: url("../images/icon-mail-green.svg");
+            background-size: 14px;
+        }
+        &:hover {
+            .contacts__icon {
+                fill: $main-purple;
+                stroke: $main-purple;
+            }
+        }
+    }
+    &__send {
+        background-color: white;
+        border-top: 1px solid $sidebar-border;
+        display: none;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 200px;
+        position: relative;
+        z-index: 4;
+    }
+    &__send-title {
+        margin-bottom: 100px;
+    }
+    &__send-icon {
+        stroke: $main-green;
+        stroke-width: 2px;
+        fill: transparent;
+        margin-bottom: 40px;
+        height: 240px;
+    }
+    &__icon {
+        fill: $main-green;
+        stroke-width: 1px;
+        position: relative;
+        margin-right: 2px;
+        &_map {
+            stroke: none !important;
+            top: 2px;
+            height: 15px;
+            width: 11px;
+        }
+        &_mail {
+            top: 2px;
+            fill: none !important;
+            stroke: $main-green;
+            height: 12px;
+            width: 14px;
+        }
+    }
+    .decor-lines__block {
+        &:nth-child(1) {
+            .decor-lines__point_left {
+                display: none;
+            }
+        }
+        &:nth-child(2) {
+            .decor-lines__point_right {
+                display: none;
+            }
+        }
+        &:nth-child(4) {
+            .decor-lines__point_right {
+                display: none;
+            }
+        }
+    }
+}

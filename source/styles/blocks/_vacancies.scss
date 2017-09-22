@@ -1,0 +1,116 @@
+
+.vacancies {
+
+	&__filter {
+		position: relative;
+		min-height: 400px;
+		margin-top: 130px;
+		//padding-top: 96px;
+		background: url(../images/bg/vacancies.jpg) no-repeat center;
+		background-size: cover;
+		z-index: 4;
+	}
+
+	&__filter-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		padding-top: 80px;
+		min-height: 400px;
+		height: 100%;
+	}
+
+	&__filter-headline {
+		color: #fff;
+	}
+
+	&__icon {
+		position: relative;
+		margin-top: 50px;
+	}
+
+	&__filter-items-wrap {
+		display: none;
+		margin-top: 67px;
+		padding: 0 140px;
+	}
+
+	&__filter-item {
+		position: relative;
+		display: inline-block;
+		height: 50px;
+		margin: 5px 4px;
+		padding: 8px 40px;
+		color: #fff;
+		border: 1px solid rgba(255,255,255,0.4);
+		cursor: pointer;
+		transition: all 0.2s linear;
+		
+		&[data-filter="all"] {
+			background-color: rgba(0,0,0,0.4);
+			border: none;
+		}
+
+		&_enabled,
+		&_enabled[data-filter="all"]  {
+			background-color: $main-green;
+			border-color: $main-green;
+
+			&::after {
+				position: absolute;
+				display: block;
+				content: "";
+				width: 22px;
+				height: 22px;
+				top: 50%;
+				left: 15px;
+				margin-top: -11px;
+				background: url(../images/icon-cross.svg) no-repeat center;
+				background-size: 12px 11px;
+			}
+		}
+
+		&_enabled[data-filter="all"]::after {
+			display: none;
+		}
+	}
+	
+	&__offers {
+		//margin-top: 120px;
+		padding-bottom: 130px;
+	}
+
+	&__offers-container {
+		padding-top: 120px;
+	}
+
+	&__offers-wrap {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: stretch;
+	}
+
+	&__offers-show-more {
+		display: none;
+		margin: 100px auto 0 auto;
+	}
+	.decor-lines__block {
+        &:nth-child(1) {
+            .decor-lines__point_left {
+                display: none;
+            }
+        }
+        &:nth-child(2) {
+            .decor-lines__point_right {
+                display: none;
+            }
+        }
+        &:nth-child(4) {
+            .decor-lines__point_right {
+                display: none;
+            }
+        }
+    }
+}

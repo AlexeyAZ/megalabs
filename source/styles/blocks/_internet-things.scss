@@ -1,0 +1,111 @@
+.internet-things {
+    &__fixed-block {
+        background-image: url("../images/bg/internet-things.jpg");
+    }
+    &__subtitle {
+        color: white;
+        margin-bottom: 50px;
+    }
+    &__container {
+        padding-top: 110px;
+    }
+    &__product {
+        margin-bottom: 85px;
+        padding-top: 105px;
+    }
+    &__product-title {
+        margin-bottom: 50px;
+    }
+    &__product-img {
+        margin: 30px 0;
+    }
+    &__product-description {
+        &:after {
+            bottom: -48px;
+        }
+    }
+    &__products-container {
+        margin-bottom: 50px;
+    }
+    &__products {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+    &__products-item {
+        padding-right: $internet-things-products-item-padding-desktop-xl;
+        margin: $internet-things-products-item-margin-desktop-xl 0;
+        width: $internet-things-products-item-width-desktop-xl;
+        &:nth-child(1) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img1.png");
+            }
+        }
+        &:nth-child(2) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img2.png");
+            }
+        }
+        &:nth-child(3) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img3.png");
+            }
+        }
+        &:nth-child(4) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img4.png");
+            }
+        }
+        &:nth-child(5) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img5.png");
+            }
+        }
+        &:nth-child(6) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img6.png");
+            }
+        }
+        &:nth-child(7) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img7.png");
+            }
+        }
+        &:nth-child(8) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img8.png");
+            }
+        }
+        &:nth-child(9) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img9.png");
+            }
+        }
+        &:nth-child(10) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img10.png");
+                background-position: center top;
+            }
+        }
+        &:nth-child(11) {
+            .internet-things__products-img {
+                background-image: url("../images/internet-things/img11.png");
+            }
+        }
+    }
+    &__products-img {
+        background-position: left center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-bottom: 40px;
+        height: $internet-things-products-img-height-desktop-xl;
+    }
+    &__products-item-title {
+        margin-bottom: 10px;
+    }
+    &__link-container {
+        padding-bottom: 130px;
+    }
+}

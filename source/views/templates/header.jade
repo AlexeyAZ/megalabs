@@ -1,0 +1,33 @@
+- var headerClass = ''
+
+block vars
+
+header.header.header_fixed(class="#{headerClass}")
+    div.container.header__container
+        nav.header__nav
+            div.header__nav-item
+                a.header__nav-link(href="about-us.html").
+                    о компании
+            div.header__nav-item
+                a.header__nav-link.header__nav-link_directions(href="main.html").
+                    направления
+            div.header__nav-item
+                a.header__nav-link(href="news.html").
+                    новости
+            div.header__nav-item.header__nav-item_logo
+                a.header__nav-link.header__nav-link_logo(href="main.html")
+                    svg.header__logo
+                        use(xlink:href="#imgLogo")
+            div.header__nav-item
+                a.header__nav-link(href="career.html").
+                    карьера
+            div.header__nav-item
+                a.header__nav-link(href="vacancies.html").
+                    вакансии
+            div.header__nav-item
+                a.header__nav-link(href="contacts.html").
+                    контакты
+
+
+
+

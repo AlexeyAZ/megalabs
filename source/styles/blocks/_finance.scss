@@ -1,0 +1,87 @@
+.finance {
+    &__fixed-block {
+        background-image: url("../images/bg/finance.jpg");
+    }
+    &__text {
+        margin-bottom: 35px;
+    }
+    &__head {
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    &__head-icon {
+        display: inline-block;
+        stroke: $main-green;
+        fill: transparent;
+        margin-bottom: 20px;
+        height: 124px;
+    }
+    &__head-title {
+        &:after {
+            bottom: -35px;
+        }
+    }
+    &__card-container {
+        padding-top: 110px;
+    }
+    &__photo-block {
+        padding-bottom: 80px;
+        .photo-block__item {
+            &:first-child {
+                .photo-block__elem_img {
+                    background-image: url("../images/finance/img1.jpg");
+                }
+            }
+            &:last-child {
+                .photo-block__elem_img {
+                    background-image: url("../images/finance/img2.jpg");
+                }
+            }
+        }
+    }
+    &__link-container {
+        margin-bottom: 80px;
+    }
+    &__product-container {
+        padding-bottom: 100px;
+    }
+    &__product {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        align-content: flex-start;
+    }
+    &__product-item {
+        padding-left: 30px;
+        width: 50%;
+    }
+    &__product-icon {
+        stroke: $main-green;
+        fill: transparent;
+        margin-bottom: 20px;
+        height: 122px;
+        &_mobile-ticket {
+            width: 122px;
+        }
+        &_print {
+            width: 106px;
+        }
+    }
+    &__product-title {
+        text-align: left;
+        margin-bottom: 45px;
+        &:after {
+            bottom: -15px;
+        }
+    }
+    &__product-paragraph {
+        margin-bottom: 20px;
+    }
+    &__product-btn-container {
+        padding-left: 30px;
+    }
+    &__product-btn {
+        box-shadow: none;
+        padding-left: 20px;
+    }
+}

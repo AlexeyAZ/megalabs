@@ -1,0 +1,56 @@
+extends templates/layout
+
+block vars
+    - var title = ''
+
+block content
+    div.content.open-news
+        include templates/decor-lines
+        div.container.padding_desktop-xl
+            div.open-news__btn-close-container.ta-center
+                a(href="/news.html").btn-circle.btn-circle_close.open-news__btn-close
+            p.title.title_l.open-news__heading.
+                Олимпийские чемпионки Рио-2016 стали первыми обладательницами новых карт &laquo;МегаФона&raquo;
+            div.open-news__article
+                div.open-news__photo-block
+                    div.open-news__photo-block-item.open-news__photo-block-item_text
+                        p.text.text_light.open-news__photo-block-text.
+                            Сегодня &laquo;МегаФон&raquo; презентовал банковскую карту, аналогов которой нет в&nbsp;мире. Счет карты&nbsp;&mdash; это счет мобильного телефона. Первыми обладательницами уникальной карты стали олимпийские чемпионки 2016&nbsp;года: фехтовальщицы Софья Великая, Яна Егорян и&nbsp;Екатерина Дьяченко. Команда саблисток только несколько дней назад вернулась из&nbsp;Рио-де-Жанейро, где спортсменки одержали победу в&nbsp;командном турнире, а&nbsp;сегодня уже получили новые карты &laquo;МегаФона&raquo; из&nbsp;рук генерального директора компании Сергея Солдатенкова.
+                        p.text.text_light.open-news__photo-block-text.
+                            Также одним из&nbsp;первых владельцев новой карты &laquo;МегаФона&raquo; стал известный саксофонист Игорь Бутман.
+                    div.open-news__photo-block-item.open-news__photo-block-item_img
+                        div.open-news__photo-block-img.open-news__photo-block-img_0301
+                p.text.text_xl.open-news__article.bottom-line.bottom-line_center.
+                    &laquo;Компания &laquo;МегаФон&raquo; уже больше десяти лет активно поддерживает спорт. Почему нам это важно? Потому что именно в&nbsp;спорте люди стараются перешагнуть через свои возможности, победить соперника, стать лучшими, первыми. &laquo;МегаФон&raquo; тоже всегда стремится быть первым. И&nbsp;наша новая карта&nbsp;&mdash; еще одно подтверждение этому. Мне очень приятно, что первыми ее&nbsp;обладательницами стали олимпийские чемпионки по&nbsp;фехтованию, кто лучше всех знает, что такое стремление к&nbsp;первенству&raquo;
+                p.text.text_light.open-news__article-author.
+                    Солдатенков Сергей, <br>генеральный директор компании &laquo;МегаФон&raquo;.
+                p.text.text_xl.open-news__article.bottom-line.bottom-line_center.
+                    &laquo;Я&nbsp;уже много лет с&nbsp;&laquo;МегаФоном&raquo; и&nbsp;всегда рад новинкам своего оператора. Для меня большая честь сегодня быть свидетелем такого масштабного запуска и&nbsp;получить новую банковскую карту, аналогов которой нет в&nbsp;мире. Спасибо &laquo;МегаФону&raquo;, что делает жизнь абонентов удобнее, интереснее и&nbsp;счастливее&raquo;
+                p.text.text_light.open-news__article-author.
+                    Бутман Игорь, <br>известный саксофонист, народный артист России.
+                div.open-news__photo-block.open-news__photo-block_left
+                    div.open-news__photo-block-item.open-news__photo-block-item_text
+                        p.open-news__photo-block-title.
+                            О карте:
+                        p.text.text_light.open-news__photo-block-text.
+                            Счет этой карты&nbsp;&mdash; это счет вашего мобильного телефона. Просто пополняйте баланс телефона&nbsp;&mdash; и&nbsp;деньги на&nbsp;карте. После этого картой &laquo;МегаФона&raquo; можно платить везде, где пожелаете: в&nbsp;ресторане, в&nbsp;кино, в&nbsp;супермаркете&nbsp;&mdash; в&nbsp;любой точке мира.
+                        p.text.text_light.open-news__photo-block-text.
+                            С картой «МегаФона» мобильный счет становится банковским.
+                        p.
+                            Преимущества:
+                        ul.open-news__list
+                                li 
+                                    p.open-news__list-item-name.list.list__item.list__item_check.list__item_check-purple.
+                                        8% годовых на остаток
+                                    p.open-news__list-item-name.list.list__item.list__item_check.list__item_check-purple.
+                                        Вознаграждение (cashback) у партнеров до 10%
+                                    p.open-news__list-item-name.list.list__item.list__item_check.list__item_check-purple.
+                                        Переводы по России без комиссии
+                                    p.open-news__list-item-name.list.list__item.list__item_check.list__item_check-purple.
+                                        Обслуживание карты — 0 рублей.
+                    div.open-news__photo-block-item.open-news__photo-block-item_img
+                        div.open-news__photo-block-img.open-news__photo-block-img_0302
+               
+
+            div.open-news__btn-top-container.ta-center
+                button.btn-circle.btn-circle_top.open-news__btn-to-top.js-btn-top

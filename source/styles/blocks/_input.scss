@@ -1,0 +1,36 @@
+input,
+textarea {
+    border: none;
+    outline: none;
+}
+textarea {
+    min-height: $textarea-height;
+    &.input {
+        padding-top: 16px;
+    }
+}
+.input {
+    @include placeholder {
+        color: $main-gray;
+        font-size: 16px;
+    }
+    transition: 0.2s linear;
+    border-bottom: 1px solid $main-purple;
+    color: black;
+    font-family: "RobotoLight";
+    font-size: 21px;
+    margin-bottom: 35px;
+    padding: 0 18px;
+    position: relative;
+    height: $input-height;
+    width: 100%;
+    &:after {
+        content: "";
+        position: absolute;
+        //height: 4px;
+    }
+    &:focus {
+        background-color: $input-hover-bg;
+        border-width: 5px;
+    }
+}

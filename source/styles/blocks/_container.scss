@@ -1,0 +1,9 @@
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: $container-width-desktop-xl;
+    z-index: 5;
+    &_wide {
+      width: $container-max-width;
+    }
+}

@@ -1,0 +1,20 @@
+.bottom-line {
+    &:after {
+        content: "";
+        background-color: $main-purple;
+        position: absolute;
+        height: 5px;
+        width: 45px;
+    }
+    &_left {
+        &:after {
+            left: 0;
+        }
+    }
+    &_center {
+        &:after {
+            transform: translateX(-50%);
+            left: 50%;
+        }
+    }
+}

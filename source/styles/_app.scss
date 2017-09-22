@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $main-gray;
+  font-family: "RobotoRegular",sans-serif;
+  line-height: 1.5;
+}
+body {
+  position: relative;
+  min-width: $container-max-width;
+}
+.error {
+  color: red;
+}
+input.error {
+    background-image: none !important;
+    color: #d0011b;
+}
+.input.valid {
+    background-image: none !important;
+    border-color: $main-purple !important;
+}
+.form-error {
+    display: none !important;
+}
+.hidden{
+     opacity: 0;
+}
+.visible{
+     opacity: 1 !important;
+}
